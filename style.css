@@ -7,6 +7,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/*--------------cabeçalho----------------*/
 .menu-lista {
   list-style: none; /* garante que a lista horizontal não tenha marcadores */
   display: flex;
@@ -27,8 +28,8 @@
   transform: scale(1.15);
 }
 
+/* muda a cor do ícone para branco e da um espaçamento */
 .bx {
-  /* muda a cor do ícone para branco e da um espaçamento */
   color: #fff;
   gap: 3px;
 }
@@ -60,7 +61,8 @@
   transition: transform 0.3s ease;
 }
 
-.logo:hover {
+/* muda o tamanho da logo quando o mouse passa por cima */
+.menu-lista .logo:hover {
   transform: scale(1.15);
 }
 
@@ -70,3 +72,77 @@
   padding: 10px 0;
   box-shadow: 0px 0.3rem 1rem rgba(0, 0, 0, 0.25);
 }
+
+
+/*-------------rodapé---------------*/
+/* estilização geral */
+.rodape {
+  background-color: #E2AC3F;
+  padding: 20px 0;
+  color: white;
+  font-size: 0.9rem;
+  box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+}
+.rodape-conteudo {
+  max-width: 1200px; /* largura máxima para não esticar em telas grandes */
+  margin: 0 auto; /* centraliza horizontalmente */
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* área esquerda do rodapé */
+.rodape-esquerda {
+  flex: 1; //* ocupa todo o espaço disponível */
+}
+
+/* lista com os links do rodapé */
+.rodape-links {
+  list-style: none;
+  padding: 0;
+}
+
+/* estilização dos itens da lista */
+.rodape-links li {
+  margin: 6px 0;
+  font-size: 32px;
+  padding-bottom: 10px;
+  text-shadow: 0px 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+
+/* estilo dos links do rodapé */
+.rodape-links a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  box-sizing: border-box; /* inclui borda */
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 3px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 3px;
+  transition: letter-spacing 0.4s ease;
+}
+
+/* efeito ao passar mouse por cima dos links */
+.rodape-links a:hover {
+  letter-spacing: 2px;
+}
+
+/* área da direita do rodapé (logo) */
+.rodape-direita {
+  flex-shrink: 0; /* impede que a logo encolha em telas menores */
+}
+
+/* estilo da logo no rodapé */
+.logo-rodape {
+  display: block; /* garante que a logo se comporte como um bloco */
+  height: 250px;
+  filter: brightness(0) invert(1);
+}
+
+
