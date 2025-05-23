@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu-lista {
+  list-style: none; /* garante que a lista horizontal não tenha marcadores */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  max-width: 1200px; /* limita largura para não esticar demais */
+  margin: 0 auto; /* centraliza horizontalmente no cabeçalho */
+  width: 100%;
+}
+
+/* coloca sombra nos textos e adiciona interação quando passa o mouse */
+.menu-lista .item-esquerda {
+  text-shadow: 0px 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+.menu-lista .item-esquerda:hover {
+  transform: scale(1.15);
+}
+
+.bx {
+  /* muda a cor do ícone para branco e da um espaçamento */
+  color: #fff;
+  gap: 3px;
+}
+.menu-lista .item-direita {
+  text-shadow: 0px 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+.menu-lista .item-direita:hover {
+  transform: scale(1.15);
+}
+
+/* remove margem padrão */
+.menu-lista li {
+  margin: 0;
+}
+
+/* tira a underline dos textos e muda a cor para branco */
+.menu-lista a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* estiliza a logo */
+.logo {
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  filter: brightness(0) invert(1); /* muda a cor para branco */
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.15);
+}
+
+/* estilização básica */
+.cabecalho {
+  background-color: #e2ac3f;
+  padding: 10px 0;
+  box-shadow: 0px 0.3rem 1rem rgba(0, 0, 0, 0.25);
+}
