@@ -1,0 +1,226 @@
+@font-face {
+
+    font-family: "Montserrat";
+    src: url("./Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+.titulo{
+
+    font-family: "Montserrat";
+    color: #E2AC3F;
+    margin-left: 70px;
+    margin-top: 150px;
+    font-size: 50px;
+
+}
+
+.Máquina_de_Lavar_Roupas_LG{ /* Máquina de Lavar Roupas LG */
+
+    border-radius: 10px;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 55px;
+    margin-top: 100px
+
+}
+
+.img_Máquina_de_Lavar_Roupas_LG{  
+
+    height: 250px;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 80px
+}
+
+.texto_Máquina_de_Lavar_Roupas_LG{
+
+    font-family: "Montserrat";
+    color: black;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.preço_Máquina_de_Lavar_Roupas_LG{
+
+    font-family: "Montserrat";
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.Máquina_de_Lavar_Brastemp{  /* Máquina de Lavar Brastemp */
+
+    border-radius: 10px;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 450px;
+    margin-top: -451px
+
+}
+
+.img_Máquina_de_Lavar_Brastemp{
+
+    height: 250px;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 80px
+}
+
+.texto_Máquina_de_Lavar_Brastemp{
+
+    font-family: "Montserrat";
+    color: black;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.preço_Máquina_de_Lavar_Brastemp{
+
+    font-family: "Montserrat";
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.Tanquinho_Colormaq{  /* Tanquinho Colormaq */
+
+    border-radius: 10px;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 840px;
+    margin-top: -451px
+
+}
+
+.img_Tanquinho_Colormaq{
+
+     height: 250px;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 70px
+}
+
+.texto_Tanquinho_Colormaq{
+
+    font-family: "Montserrat";
+    color: black;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.preço_Tanquinho_Colormaq{
+
+    font-family: "Montserrat";
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.Ferro_de_Passar_a_Vapor{  /* Ferro de Passar a Vapor */
+
+    border-radius: 10px;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 55px;
+    margin-top: 50px
+
+}
+
+.img_Ferro_de_Passar_a_Vapor{
+
+    height: 150px;
+    width: 200px;
+    margin-left: 70px;
+    margin-top: 100px
+}
+
+.texto_Ferro_de_Passar_a_Vapor{
+
+    font-family: "Montserrat";
+    color: black;
+    margin-left: 10px;
+    margin-top: 90px;
+    font-size: 15px;
+}
+
+.preço_Ferro_de_Passar_a_Vapor{
+
+    font-family: "Montserrat";
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.Ferro_de_Passar_Philips{  /* Ferro de Passar Philips */
+
+    border-radius: 10px;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 450px;
+    margin-top: -451px
+
+}
+
+.img_Ferro_de_Passar_Philips{
+
+
+    height: 150px;
+    width: 200px;
+    margin-left: 70px;
+    margin-top: 100px
+
+}
+
+.texto_Ferro_de_Passar_Philips{
+
+    font-family: "Montserrat";
+    color: black;
+    margin-left: 10px;
+    margin-top: 90px;
+    font-size: 15px;
+
+}
+
+.preço_Ferro_de_Passar_Philips{
+
+    font-family: "Montserrat";
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+
+
+.Em_branco{
+
+    border-radius: 10px;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 840px;
+    margin-top: -451px
+
+}
+
