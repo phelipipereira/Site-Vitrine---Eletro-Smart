@@ -1,225 +1,340 @@
-@font-face {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-    font-family: "Montserrat";
-    src: url("./Montserrat/Montserrat-VariableFont_wght.ttf");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-.titulo{
-
-    font-family: "Montserrat";
-    color: #E2AC3F;
-    margin-left: 70px;
-    margin-top: 150px;
-    font-size: 50px;
-
+.titulo {
+  color: #e2ac3f;
+  margin-left: 70px;
+  margin-top: 150px;
+  font-size: 45px;
 }
 
-.Robô_Aspirador_iRobot{ /* Robô Aspirador iRobot */
+.Robô_Aspirador_iRobot {
+  /* Robô Aspirador iRobot */
 
-    border-radius: 10px;
-    width: 350px;
-    height: 450px;
-    border: 1px solid black;
-    background-color: white;
-    margin-left: 55px;
-    margin-top: 100px
-
+  border-radius: 10px;
+  width: 350px;
+  height: 450px;
+  border: 1px solid black;
+  background-color: white;
+  margin-left: 55px;
+  margin-top: 100px;
 }
 
-.img_Robô_Aspirador_iRobot{
-
-    height: 300px;
-    width: 200px;
-    margin-left: 70px;
-    margin-top: 35px
+.img_Robô_Aspirador_iRobot {
+  height: 300px;
+  width: 200px;
+  margin-left: 70px;
+  margin-top: 35px;
 }
 
-.texto_Robô_Aspirador_iRobot{
-
-    font-family: "Montserrat";
-    color: black;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: 15px;
+.texto_Robô_Aspirador_iRobot {
+  font-family: "Montserrat";
+  color: black;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 15px;
 }
 
-.preço_Robô_Aspirador_iRobot{
-
-    font-family: "Montserrat";
-    color: black;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: 15px;
+.preço_Robô_Aspirador_iRobot {
+  font-family: "Montserrat";
+  color: black;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 15px;
 }
 
-.Robô_Aspirador_Xiaomi{ /* Robô Aspirador Xiaomi */
+.Robô_Aspirador_Xiaomi {
+  /* Robô Aspirador Xiaomi */
 
-    border-radius: 10px;
-    width: 350px;
-    height: 450px;
-    border: 1px solid black;
-    background-color: white;
-    margin-left: 450px;
-    margin-top: -451px
-
+  border-radius: 10px;
+  width: 350px;
+  height: 450px;
+  border: 1px solid black;
+  background-color: white;
+  margin-left: 450px;
+  margin-top: -451px;
 }
 
-.img_Robô_Aspirador_Xiaomi{
-
-    height: 300px;
-    width: 200px;
-    margin-left: 70px;
-    margin-top: 35px
+.img_Robô_Aspirador_Xiaomi {
+  height: 300px;
+  width: 200px;
+  margin-left: 70px;
+  margin-top: 35px;
 }
 
-.texto_Robô_Aspirador_Xiaomi{
-
-    font-family: "Montserrat";
-    color: black;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: 15px;
+.texto_Robô_Aspirador_Xiaomi {
+  font-family: "Montserrat";
+  color: black;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 15px;
 }
-.preço_Robô_Aspirador_Xiaomi{
-
-    font-family: "Montserrat";
-    color: black;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: 15px;
+.preço_Robô_Aspirador_Xiaomi {
+  font-family: "Montserrat";
+  color: black;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 15px;
 }
-.Aspirador_de_Pó_Electrolux{    /* Aspirador de Pó Electrolux */
+.Aspirador_de_Pó_Electrolux {
+  /* Aspirador de Pó Electrolux */
 
-    border-radius: 10px;
-    width: 350px;
-    height: 450px;
-    border: 1px solid black;
-    background-color: white;
-    margin-left: 840px;
-    margin-top: -451px
-
+  border-radius: 10px;
+  width: 350px;
+  height: 450px;
+  border: 1px solid black;
+  background-color: white;
+  margin-left: 840px;
+  margin-top: -451px;
 }
 
-.img_Aspirador_de_Pó_Electrolux{
-
-    height: 150px;
-    width: 200px;
-    margin-left: 70px;
-    margin-top: 100px
+.img_Aspirador_de_Pó_Electrolux {
+  height: 150px;
+  width: 200px;
+  margin-left: 70px;
+  margin-top: 100px;
 }
 
-.texto_Aspirador_de_Pó_Electrolux{
-
-    font-family: "Montserrat";
-    color: black;
-    margin-left: 10px;
-    margin-top: 90px;
-    font-size: 15px;
+.texto_Aspirador_de_Pó_Electrolux {
+  font-family: "Montserrat";
+  color: black;
+  margin-left: 10px;
+  margin-top: 90px;
+  font-size: 15px;
 }
 
-.preço_Aspirador_de_Pó_Electrolux{
-
-    font-family: "Montserrat";
-    color: black;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: 15px;
+.preço_Aspirador_de_Pó_Electrolux {
+  font-family: "Montserrat";
+  color: black;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 15px;
 }
 
-.Aspirador_Vertical{    /* Aspirador Vertical */
+.Aspirador_Vertical {
+  /* Aspirador Vertical */
 
-    border-radius: 10px;
-    width: 350px;
-    height: 450px;
-    border: 1px solid black;
-    background-color: white;
-    margin-left: 55px;
-    margin-top: 50px
-
+  border-radius: 10px;
+  width: 350px;
+  height: 450px;
+  border: 1px solid black;
+  background-color: white;
+  margin-left: 55px;
+  margin-top: 50px;
 }
 
-.img_Aspirador_Vertical{
-
-    height: 150px;
-    width: 200px;
-    margin-left: 70px;
-    margin-top: 100px
+.img_Aspirador_Vertical {
+  height: 150px;
+  width: 200px;
+  margin-left: 70px;
+  margin-top: 100px;
 }
 
-.texto_Aspirador_Vertical{
-
-    font-family: "Montserrat";
-    color: black;
-    margin-left: 10px;
-    margin-top: 90px;
-    font-size: 15px;
+.texto_Aspirador_Vertical {
+  font-family: "Montserrat";
+  color: black;
+  margin-left: 10px;
+  margin-top: 90px;
+  font-size: 15px;
 }
 
-.preço_Aspirador_Vertical{
-
-    font-family: "Montserrat";
-    color: black;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: 15px;
+.preço_Aspirador_Vertical {
+  font-family: "Montserrat";
+  color: black;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 15px;
 }
 
-.Aspirador_de_Pó_Portátil{  /* Aspirador de Pó Portátil */
+.Aspirador_de_Pó_Portátil {
+  /* Aspirador de Pó Portátil */
 
-    border-radius: 10px;
-    width: 350px;
-    height: 450px;
-    border: 1px solid black;
-    background-color: white;
-    margin-left: 450px;
-    margin-top: -451px
-
+  border-radius: 10px;
+  width: 350px;
+  height: 450px;
+  border: 1px solid black;
+  background-color: white;
+  margin-left: 450px;
+  margin-top: -451px;
 }
 
-.img_Aspirador_de_Pó_Portátil{
-
-
-    height: 150px;
-    width: 200px;
-    margin-left: 70px;
-    margin-top: 100px
-
+.img_Aspirador_de_Pó_Portátil {
+  height: 150px;
+  width: 200px;
+  margin-left: 70px;
+  margin-top: 100px;
 }
 
-.texto_Aspirador_de_Pó_Portátil{
-
-    font-family: "Montserrat";
-    color: black;
-    margin-left: 10px;
-    margin-top: 90px;
-    font-size: 15px;
-
+.texto_Aspirador_de_Pó_Portátil {
+  font-family: "Montserrat";
+  color: black;
+  margin-left: 10px;
+  margin-top: 90px;
+  font-size: 15px;
 }
 
-.preço_Aspirador_de_Pó_Portátil{
-
-    font-family: "Montserrat";
-    color: black;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: 15px;
-
+.preço_Aspirador_de_Pó_Portátil {
+  font-family: "Montserrat";
+  color: black;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 15px;
 }
 
+.Em_branco {
+  border-radius: 10px;
+  width: 350px;
+  height: 450px;
+  border: 1px solid black;
+  background-color: white;
+  margin-left: 840px;
+  margin-top: -451px;
+}
 
-.Em_branco{
+/*--------------cabeçalho----------------*/
+.menu-lista {
+  list-style: none; /* garante que a lista horizontal não tenha marcadores */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  max-width: 1200px; /* limita largura para não esticar demais */
+  margin: 0 auto; /* centraliza horizontalmente no cabeçalho */
+  width: 100%;
+}
 
-    border-radius: 10px;
-    width: 350px;
-    height: 450px;
-    border: 1px solid black;
-    background-color: white;
-    margin-left: 840px;
-    margin-top: -451px
+/* coloca sombra nos textos e adiciona interação quando passa o mouse */
+.menu-lista .item-esquerda {
+  text-shadow: 0px 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+.menu-lista .item-esquerda:hover {
+  transform: scale(1.15);
+}
 
+/* muda a cor do ícone para branco e da um espaçamento */
+.bx {
+  color: #fff;
+  gap: 3px;
+}
+.menu-lista .item-direita {
+  text-shadow: 0px 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+.menu-lista .item-direita:hover {
+  transform: scale(1.15);
+}
+
+/* remove margem padrão */
+.menu-lista li {
+  margin: 0;
+}
+
+/* tira a underline dos textos e muda a cor para branco */
+.menu-lista a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* estiliza a logo */
+.logo {
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  filter: brightness(0) invert(1); /* muda a cor para branco */
+  transition: transform 0.3s ease;
+}
+
+/* muda o tamanho da logo quando o mouse passa por cima */
+.menu-lista .logo:hover {
+  transform: scale(1.15);
+}
+
+/* estilização básica */
+.cabecalho {
+  background-color: #e2ac3f;
+  padding: 10px 0;
+  box-shadow: 0px 0.3rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+/*-------------rodapé---------------*/
+/* estilização geral */
+.rodape {
+  background-color: #e2ac3f;
+  padding: 20px 0;
+  color: white;
+  font-size: 0.9rem;
+  box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+}
+.rodape-conteudo {
+  max-width: 1200px; /* largura máxima para não esticar em telas grandes */
+  margin: 0 auto; /* centraliza horizontalmente */
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* área esquerda do rodapé */
+.rodape-esquerda {
+  flex: 1; //* ocupa todo o espaço disponível */
+}
+
+/* lista com os links do rodapé */
+.rodape-links {
+  list-style: none;
+  padding: 0;
+}
+
+/* estilização dos itens da lista */
+.rodape-links li {
+  margin: 6px 0;
+  font-size: 32px;
+  padding-bottom: 10px;
+  text-shadow: 0px 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+
+/* estilo dos links do rodapé */
+.rodape-links a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  box-sizing: border-box; /* inclui borda */
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 3px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 3px;
+  transition: letter-spacing 0.4s ease;
+}
+
+/* efeito ao passar mouse por cima dos links */
+.rodape-links a:hover {
+  letter-spacing: 2px;
+}
+
+/* área da direita do rodapé (logo) */
+.rodape-direita {
+  flex-shrink: 0; /* impede que a logo encolha em telas menores */
+}
+
+/* estilo da logo no rodapé */
+.logo-rodape {
+  display: block; /* garante que a logo se comporte como um bloco */
+  height: 250px;
+  filter: brightness(0) invert(1);
 }
