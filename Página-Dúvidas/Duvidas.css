@@ -7,6 +7,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* Estiliza a seção principal de dúvidas com fundo colorido, largura limitada e centralização */
 .Duvidas {
   background-color: #e2ac3f;
   max-width: 50%;
@@ -18,6 +19,7 @@
   border-radius: 20px;
 }
 
+/* Define uma caixa com borda grossa e cantos arredondados */
 .caixa {
   border-style: solid;
   padding: 25px;
@@ -25,12 +27,14 @@
   border-radius: 10px;
 }
 
+/* Define o estilo do título principal */
 .title {
   font-weight: lighter;
   font-weight: 400;
   font-size: 40px;
 }
 
+/* Define o estilo do subtítulo */
 .subtitle {
   font-weight: lighter;
   font-weight: 400;
@@ -39,11 +43,13 @@
   padding-bottom: 30px;
 }
 
+/* Remove marcadores da lista de informações */
 .dados {
   list-style: none;
   padding: 0;
 }
 
+/* Alinha os itens da lista em linha, com espaçamento entre eles */
 .lista {
   display: flex;
   align-items: flex-start;
@@ -51,12 +57,14 @@
   gap: 10px;
 }
 
+/* Estiliza os títulos de cada informação de contato */
 .contato {
   font-weight: bold;
   flex: 1; /* ocupa um espaço proporcional */
   text-align: right;
 }
 
+/* Estiliza os dados de contato, alinhando à esquerda e ocupando mais espaço */
 .infos {
   text-align: left;
   flex: 2; /* ocupa mais espaço para comportar textos longos */
@@ -197,4 +205,141 @@
   display: block; /* garante que a logo se comporte como um bloco */
   height: 250px;
   filter: brightness(0) invert(1);
+}
+
+/*------------------ RESPONSIVO ------------------*/
+@media (max-width: 768px) {
+  /* Define largura e espaçamento vertical da seção de dúvidas */
+  .Duvidas {
+    max-width: 90%;
+    padding: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  /* Reduz o preenchimento interno e a largura da borda da caixa */
+  .caixa {
+    padding: 15px;
+    border-width: 6px;
+  }
+
+  /* Diminui o tamanho da fonte do título e centraliza o texto */
+  .title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  /* Diminui a fonte do subtítulo, centraliza e ajusta o espaçamento */
+  .subtitle {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  /* Alinha os itens da lista verticalmente com pouco espaçamento */
+  .lista {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  /* Faz com que contato e infos ocupem 100% da largura e fiquem alinhados à esquerda */
+  .contato,
+  .infos {
+    text-align: left;
+    flex: unset;
+    width: 100%;
+  }
+
+  /* Define o tamanho da fonte para os rótulos */
+  .contato {
+    font-size: 16px;
+  }
+
+  /* Define o tamanho da fonte para os dados */
+  .infos {
+    font-size: 15px;
+  }
+}
+
+/*--------------cabeçalho----------------*/
+/* Torna o menu horizontal com quebra de linha e espaçamento entre itens */
+.menu-lista {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/*-------------rodapé---------------*/
+/* Alinha os itens do rodapé horizontalmente e permite quebra de linha */
+.rodape-conteudo {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Define que cada lado do rodapé ocupe aproximadamente metade do espaço */
+.rodape-esquerda,
+.rodape-direita {
+  flex: 1 1 45%;
+}
+
+/* Reduz o tamanho da fonte e aumenta o padding dos links do rodapé */
+.rodape-links a {
+  font-size: 24px;
+  padding: 6px 12px;
+}
+
+/* Reduz a altura da logo no rodapé */
+.logo-rodape {
+  height: 150px;
+}
+
+/* Adiciona padding horizontal para conteúdo e menu */
+.rodape-conteudo,
+.menu-lista {
+  padding: 0 1rem;
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px; /* Diminui o tamanho da fonte do título */
+  }
+
+  .subtitle {
+    font-size: 18px; /* Diminui o tamanho da fonte do subtítulo */
+  }
+
+  .contato,
+  .infos {
+    font-size: 14px; /* Define fonte menor para os textos de contato e informações */
+  }
+
+  /*--------------cabeçalho----------------*/
+  .logo {
+    height: 80px; /* Reduz a altura da logo no cabeçalho */
+  }
+
+  /*-------------rodapé---------------*/
+  .rodape-links li {
+    font-size: 12px; /* Reduz o tamanho da fonte dos itens da lista do rodapé */
+  }
+
+  .rodape-links a {
+    font-size: 16px; /* Diminui a fonte dos links do rodapé */
+    padding: 4px 8px; /* Reduz o preenchimento dos links */
+  }
+
+  .logo-rodape {
+    height: 150px; /* Define a altura da logo no rodapé */
+  }
+}
+
+/* Permite rolagem horizontal se necessário */
+html,
+body {
+  overflow-x: hidden;
 }

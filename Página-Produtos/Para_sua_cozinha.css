@@ -339,3 +339,73 @@
   height: 250px;
   filter: brightness(0) invert(1);
 }
+
+/*------------------ RESPONSIVO ------------------*/
+@media (max-width: 768px) {
+  /*--------------cabeçalho----------------*/
+  /* Torna o menu horizontal com quebra de linha e espaçamento entre itens */
+  .menu-lista {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /*-------------rodapé---------------*/
+  /* Alinha os itens do rodapé horizontalmente e permite quebra de linha */
+  .rodape-conteudo {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* Define que cada lado do rodapé ocupe aproximadamente metade do espaço */
+  .rodape-esquerda,
+  .rodape-direita {
+    flex: 1 1 45%;
+  }
+
+  /* Reduz o tamanho da fonte e aumenta o padding dos links do rodapé */
+  .rodape-links a {
+    font-size: 24px;
+    padding: 6px 12px;
+  }
+
+  /* Reduz a altura da logo no rodapé */
+  .logo-rodape {
+    height: 150px;
+  }
+
+  /* Adiciona padding horizontal para conteúdo e menu */
+  .rodape-conteudo,
+  .menu-lista {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 480px) {
+  /*--------------cabeçalho----------------*/
+  .logo {
+    height: 80px; /* Reduz a altura da logo no cabeçalho */
+  }
+
+  /*-------------rodapé---------------*/
+  .rodape-links li {
+    font-size: 12px; /* Reduz o tamanho da fonte dos itens da lista do rodapé */
+  }
+
+  .rodape-links a {
+    font-size: 16px; /* Diminui a fonte dos links do rodapé */
+    padding: 4px 8px; /* Reduz o preenchimento dos links */
+  }
+
+  .logo-rodape {
+    height: 150px; /* Define a altura da logo no rodapé */
+  }
+}
+
+/* Permite rolagem horizontal se necessário */
+html,
+body {
+  overflow-x: hidden;
+}
