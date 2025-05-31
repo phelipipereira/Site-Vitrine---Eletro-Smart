@@ -1,0 +1,111 @@
+      @import url("https://fonts.googleapis.com/css2?family=Exile&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+/*  */
+
+#categorias
+{
+    color: #E2AC3F;
+}
+
+.apresentação 
+{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px;
+    
+}
+
+#mais-vendidos
+{
+    color: #E2AC3F;
+}
+
+
+.conteudo-box-icon /* */
+{
+    color: black;
+    display: flex;
+    gap: 50px;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.icone-nome{
+    height: auto;
+    width: auto;
+    transition: 0.3s ease
+}
+.icone-nome:hover
+{
+   transform: scale(1.15);
+}
+
+.conteudo-box-icon p 
+{
+    font-size: 25px;
+}
+
+.icone-produto
+{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color:#f6e6c5;
+    padding: 10px;
+}
+
+/* Produtos mais vendidos */
+
+#todos-pdt
+{
+    justify-content: center;
+    display: flex;
+    gap:50px;
+    flex-wrap: wrap;
+}
+
+.box-produto
+{
+    border: solid #C8C8C8;
+    border-radius: 20px;
+    width: 220px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.box-produto img
+{
+    height: 200px;
+   
+}
+
+.box-produto p 
+{
+    margin: 10px;
+}
+
+.nome
+{
+    color: black;
+    font-display: auto;
+    text-align: left;
+   
+}
+
+.preco
+{
+    color: black;
+    text-align: left;
+   
+    font-size: 20px;
+    font-weight: 500;
+}
