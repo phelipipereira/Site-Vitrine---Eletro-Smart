@@ -268,7 +268,7 @@
 .menu-lista {
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: row;
   gap: 1rem;
 }
 

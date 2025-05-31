@@ -1,4 +1,4 @@
-      @import url("https://fonts.googleapis.com/css2?family=Exile&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exile&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,104 +7,309 @@
 }
 /*  */
 
-#categorias
-{
-    color: #E2AC3F;
+#categorias {
+  color: #e2ac3f;
 }
 
-.apresentação 
-{
-    font-size: 30px;
-    font-weight: normal;
-    margin: 30px;
-    
+.apresentação {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 30px;
 }
 
-#mais-vendidos
-{
-    color: #E2AC3F;
+#mais-vendidos {
+  color: #e2ac3f;
 }
 
-
-.conteudo-box-icon /* */
-{
-    color: black;
-    display: flex;
-    gap: 50px;
-    padding: 0;
-    justify-content: center;
-    text-align: center;
+.conteudo-box-icon /* */ {
+  color: black;
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  justify-content: center;
+  text-align: center;
 }
 
-.icone-nome{
-    height: auto;
-    width: auto;
-    transition: 0.3s ease
-}
-.icone-nome:hover
-{
-   transform: scale(1.15);
+.icone-nome {
+  height: auto;
+  width: auto;
+  transition: 0.3s ease;
 }
 
-.conteudo-box-icon p 
-{
-    font-size: 25px;
+/* tira o underline dos links dos ícones */
+.icone-nome a {
+  text-decoration: none;
+  color: black;
 }
 
-.icone-produto
-{
-    height: 150px;
-    width: 150px;
-    border-radius: 20px;
-    background-color:#f6e6c5;
-    padding: 20px;
+.icone-nome:hover {
+  transform: scale(1.15);
+}
+
+.conteudo-box-icon p {
+  font-size: 25px;
+}
+
+.icone-produto {
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+  background-color: #f6e6c5;
+  padding: 20px;
 }
 
 /* Produtos mais vendidos */
 
-#todos-pdt
-{
-    justify-content: center;
-    display: flex;
-    gap:50px;
+#todos-pdt {
+  justify-content: center;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.box-produto {
+  border: solid #c8c8c8;
+  border-radius: 20px;
+  width: 220px;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.box-produto img {
+  height: 200px;
+}
+
+.box-produto p {
+  margin: 10px;
+}
+
+.nome {
+  color: black;
+  font-display: auto;
+  text-align: left;
+}
+
+.preco {
+  color: black;
+  text-align: left;
+
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*--------------cabeçalho----------------*/
+.menu-lista {
+  list-style: none; /* garante que a lista horizontal não tenha marcadores */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  max-width: 1200px; /* limita largura para não esticar demais */
+  margin: 0 auto; /* centraliza horizontalmente no cabeçalho */
+  width: 100%;
+}
+
+/* coloca sombra nos textos e adiciona interação quando passa o mouse */
+.menu-lista .item-esquerda {
+  text-shadow: 0px 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+.menu-lista .item-esquerda:hover {
+  transform: scale(1.15);
+}
+
+/* muda a cor do ícone para branco e da um espaçamento */
+.bx {
+  color: #fff;
+  gap: 3px;
+}
+.menu-lista .item-direita {
+  text-shadow: 0px 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+.menu-lista .item-direita:hover {
+  transform: scale(1.15);
+}
+
+/* remove margem padrão */
+.menu-lista li {
+  margin: 0;
+}
+
+/* tira a underline dos textos e muda a cor para branco */
+.menu-lista a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* estiliza a logo */
+.logo {
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  filter: brightness(0) invert(1); /* muda a cor para branco */
+  transition: transform 0.3s ease;
+}
+
+/* muda o tamanho da logo quando o mouse passa por cima */
+.menu-lista .logo:hover {
+  transform: scale(1.15);
+}
+
+/* estilização básica */
+.cabecalho {
+  background-color: #e2ac3f;
+  padding: 10px 0;
+  box-shadow: 0px 0.3rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+/*-------------rodapé---------------*/
+/* estilização geral */
+.rodape {
+  background-color: #e2ac3f;
+  padding: 20px 0;
+  color: white;
+  font-size: 0.9rem;
+  box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+}
+.rodape-conteudo {
+  max-width: 1200px; /* largura máxima para não esticar em telas grandes */
+  margin: 0 auto; /* centraliza horizontalmente */
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* área esquerda do rodapé */
+.rodape-esquerda {
+  flex: 1; //* ocupa todo o espaço disponível */
+}
+
+/* lista com os links do rodapé */
+.rodape-links {
+  list-style: none;
+  padding: 0;
+}
+
+/* estilização dos itens da lista */
+.rodape-links li {
+  margin: 6px 0;
+  font-size: 32px;
+  padding-bottom: 10px;
+  text-shadow: 0px 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+
+/* estilo dos links do rodapé */
+.rodape-links a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  box-sizing: border-box; /* inclui borda */
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 3px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 3px;
+  transition: letter-spacing 0.4s ease;
+}
+
+/* efeito ao passar mouse por cima dos links */
+.rodape-links a:hover {
+  letter-spacing: 2px;
+}
+
+/* área da direita do rodapé (logo) */
+.rodape-direita {
+  flex-shrink: 0; /* impede que a logo encolha em telas menores */
+}
+
+/* estilo da logo no rodapé */
+.logo-rodape {
+  display: block; /* garante que a logo se comporte como um bloco */
+  height: 250px;
+  filter: brightness(0) invert(1);
+}
+
+/*------------------ RESPONSIVO ------------------*/
+@media (max-width: 768px) {
+  /*--------------cabeçalho----------------*/
+  /* Torna o menu horizontal com quebra de linha e espaçamento entre itens */
+  .menu-lista {
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /*-------------rodapé---------------*/
+  /* Alinha os itens do rodapé horizontalmente e permite quebra de linha */
+  .rodape-conteudo {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* Define que cada lado do rodapé ocupe aproximadamente metade do espaço */
+  .rodape-esquerda,
+  .rodape-direita {
+    flex: 1 1 45%;
+  }
+
+  /* Reduz o tamanho da fonte e aumenta o padding dos links do rodapé */
+  .rodape-links a {
+    font-size: 24px;
+    padding: 6px 12px;
+  }
+
+  /* Reduz a altura da logo no rodapé */
+  .logo-rodape {
+    height: 150px;
+  }
+
+  /* Adiciona padding horizontal para conteúdo e menu */
+  .rodape-conteudo,
+  .menu-lista {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 480px) {
+  /*--------------cabeçalho----------------*/
+  .logo {
+    height: 80px; /* Reduz a altura da logo no cabeçalho */
+  }
+
+  /*-------------rodapé---------------*/
+  .rodape-links li {
+    font-size: 12px; /* Reduz o tamanho da fonte dos itens da lista do rodapé */
+  }
+
+  .rodape-links a {
+    font-size: 16px; /* Diminui a fonte dos links do rodapé */
+    padding: 4px 8px; /* Reduz o preenchimento dos links */
+  }
+
+  .logo-rodape {
+    height: 150px; /* Define a altura da logo no rodapé */
+  }
 }
 
-.box-produto
-{
-    border: solid #C8C8C8;
-    border-radius: 20px;
-    width: 220px;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-}
-
-
-.box-produto img
-{
-    height: 200px;
-   
-}
-
-.box-produto p 
-{
-    margin: 10px;
-}
-
-.nome
-{
-    color: black;
-    font-display: auto;
-    text-align: left;
-   
-}
-
-.preco
-{
-    color: black;
-    text-align: left;
-   
-    font-size: 20px;
-    font-weight: 500;
+/* Permite rolagem horizontal se necessário */
+html,
+body {
+  overflow-x: hidden;
 }
