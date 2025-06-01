@@ -201,6 +201,113 @@
   margin-left: 840px;
   margin-top: -451px;
 }
+@media (max-width: 450px) { /*Responsividade para o celular*/
+  .titulo {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+
+  .Ventilador_de_Mesa_Arno,
+  .Ar_Condicionado_Split_LG,
+  .Climatizador_de_Ar_Philco,
+  .Em_branco {
+    border-radius: 10px;
+    width: 330px;
+    height: 550px;
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-top: 100px;
+  }
+  .Ventilador_de_Coluna {
+    border-radius: 10px;
+    width: 330px;
+    height: 600px;
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-top: 100px;
+  }
+  .Ar_Condicionado_Split_Samsung {
+    border-radius: 10px;
+    width: 330px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-top: 100px;
+  }
+  .Ar_Condicionado_Split_LG {
+    border-radius: 10px;
+    width: 330px;
+    height: 425px;
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-top: 100px;
+  }
+
+  .img_Ventilador_de_Coluna,
+  .img_Ventilador_de_Mesa_Arno,
+  .img_Ar_Condicionado_Split_Samsung,
+  .img_Ar_Condicionado_Split_LG,
+  .img_Climatizador_de_Ar_Philco {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .texto_Ventilador_de_Coluna,
+  .texto_Ventilador_de_Mesa_Arno,
+  .texto_Ar_Condicionado_Split_Samsung,
+  .texto_Ar_Condicionado_Split_LG,
+  .texto_Climatizador_de_Ar_Philco {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .preço_Ventilador_de_Coluna,
+  .preço_Ventilador_de_Mesa_Arno,
+  .preço_Ar_Condicionado_Split_Samsung,
+  .preço_Ar_Condicionado_Split_LG,
+  .preço_Climatizador_de_Ar_Philco {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 768px) { /*Responsividade para o tablet*/
+  .titulo {
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+
+  .Ar_Condicionado_Split_Samsung,
+  .Ar_Condicionado_Split_LG,
+  .Climatizador_de_Ar_Philco,
+  .Em_branco {
+    width: 300px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  .Ventilador_de_Coluna,
+  .Ventilador_de_Mesa_Arno {
+    width: 300px;
+    height: 475px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
 
 /*--------------cabeçalho----------------*/
 .menu-lista {
