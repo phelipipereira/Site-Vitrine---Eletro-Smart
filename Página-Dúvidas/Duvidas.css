@@ -261,17 +261,16 @@
   .infos {
     font-size: 15px;
   }
-}
-
-/*--------------cabeçalho----------------*/
-/* Torna o menu horizontal com quebra de linha e espaçamento entre itens */
-.menu-lista {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: row;
-  gap: 1rem;
-}
-
+  
+  /*--------------cabeçalho----------------*/
+  /* Torna o menu horizontal com quebra de linha e espaçamento entre itens */
+  .menu-lista {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: row;
+    gap: 1rem;
+  }
+  
 /*-------------rodapé---------------*/
 /* Alinha os itens do rodapé horizontalmente e permite quebra de linha */
 .rodape-conteudo {
@@ -302,6 +301,7 @@
 .rodape-conteudo,
 .menu-lista {
   padding: 0 1rem;
+}
 }
 
 @media (max-width: 480px) {
