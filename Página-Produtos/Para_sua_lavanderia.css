@@ -201,6 +201,108 @@
   margin-left: 840px;
   margin-top: -451px;
 }
+@media (max-width: 768px) { /*responsividade do tablet*/
+  .titulo {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+
+  .Máquina_de_Lavar_Brastemp {
+    width: 350px;
+    height: 450px;
+    margin-left: 200px;
+    margin-top: 20px;
+  }
+
+  .Máquina_de_Lavar_Roupas_LG {
+    width: 350px;
+    height: 420px;
+    margin-left: 200px;
+    margin-top: 20px;
+  }
+
+  .Tanquinho_Colormaq {
+    width: 350px;
+    height: 470px;
+    margin-left: 200px;
+    margin-top: 20px;
+  }
+
+  .Ferro_de_Passar_a_Vapor,
+  .Ferro_de_Passar_Philips,
+  .Em_branco {
+    border-radius: 10px;
+    width: 350px;
+    height: 525px;
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 200px;
+    margin-top: 40px;
+  }
+
+  .img_Máquina_de_Lavar_Roupas_LG,
+  .img_Máquina_de_Lavar_Brastemp,
+  .img_Tanquinho_Colormaq,
+  .img_Ferro_de_Passar_a_Vapor,
+  .img_Ferro_de_Passar_Philips {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 480px) { /*Responsividade do celular*/
+  .titulo {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+
+  .Máquina_de_Lavar_Brastemp {
+    width: 350px;
+    height: 450px;
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+
+  .Máquina_de_Lavar_Roupas_LG {
+    width: 350px;
+    height: 420px;
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+
+  .Tanquinho_Colormaq {
+    width: 350px;
+    height: 470px;
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+
+  .Ferro_de_Passar_a_Vapor,
+  .Ferro_de_Passar_Philips,
+  .Em_branco {
+    border-radius: 10px;
+    width: 350px;
+    height: 525px;
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 25px;
+    margin-top: 40px;
+  }
+
+  .img_Máquina_de_Lavar_Roupas_LG,
+  .img_Máquina_de_Lavar_Brastemp,
+  .img_Tanquinho_Colormaq,
+  .img_Ferro_de_Passar_a_Vapor,
+  .img_Ferro_de_Passar_Philips {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+  }
+}
+
 
 /*--------------cabeçalho----------------*/
 .menu-lista {
