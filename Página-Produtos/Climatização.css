@@ -10,197 +10,52 @@
 .titulo {
   color: #e2ac3f;
   margin-left: 70px;
-  margin-top: 150px;
+  margin-top: 60px;
   font-size: 45px;
+  font-weight: normal ;
 }
 
-.Ventilador_de_Coluna {
-  /* Ventilador de Coluna */
+#todos-pdt {
+  justify-content: center;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
 
-  border-radius: 10px;
-  width: 350px;
-  height: 450px;
-  border: 1px solid black;
-  background-color: white;
-  margin-left: 55px;
+.box-produto {
   margin-top: 100px;
+  margin-bottom: 100px;
+  border: solid #c8c8c8;
+  border-radius: 20px;
+  width: 220px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
 }
 
-.img_Ventilador_de_Coluna {
-  height: 300px;
-  width: 200px;
-  margin-left: 70px;
-  margin-top: 35px;
+.box-produto img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-.texto_Ventilador_de_Coluna {
-  font-family: "Montserrat";
+
+.nome {
   color: black;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 15px;
+  margin: 30;
+  margin-top: auto; 
+  text-align: left;
 }
 
-.preço_Ventilador_de_Coluna {
-  font-family: "Montserrat";
+.preco {
   color: black;
-  font-weight: bold;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0 0 0;
 }
 
-.Ventilador_de_Mesa_Arno {
-  /* Ventilador de Mesa Arno */
-
-  border-radius: 10px;
-  width: 350px;
-  height: 450px;
-  border: 1px solid black;
-  background-color: white;
-  margin-left: 450px;
-  margin-top: -451px;
-}
-
-.img_Ventilador_de_Mesa_Arno {
-  height: 300px;
-  width: 200px;
-  margin-left: 70px;
-  margin-top: 35px;
-}
-
-.texto_Ventilador_de_Mesa_Arno {
-  font-family: "Montserrat";
-  color: black;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 15px;
-}
-.preço_Ventilador_de_Mesa_Arno {
-  font-family: "Montserrat";
-  color: black;
-  font-weight: bold;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 15px;
-}
-.Ar_Condicionado_Split_Samsung {
-  /* Ar Condicionado Split Samsung */
-
-  border-radius: 10px;
-  width: 350px;
-  height: 450px;
-  border: 1px solid black;
-  background-color: white;
-  margin-left: 840px;
-  margin-top: -451px;
-}
-
-.img_Ar_Condicionado_Split_Samsung {
-  height: 150px;
-  width: 200px;
-  margin-left: 70px;
-  margin-top: 100px;
-}
-
-.texto_Ar_Condicionado_Split_Samsung {
-  font-family: "Montserrat";
-  color: black;
-  margin-left: 10px;
-  margin-top: 90px;
-  font-size: 15px;
-}
-
-.preço_Ar_Condicionado_Split_Samsung {
-  font-family: "Montserrat";
-  color: black;
-  font-weight: bold;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 15px;
-}
-
-.Ar_Condicionado_Split_LG {
-  /* Ar Condicionado Split LG */
-
-  border-radius: 10px;
-  width: 350px;
-  height: 450px;
-  border: 1px solid black;
-  background-color: white;
-  margin-left: 55px;
-  margin-top: 50px;
-}
-
-.img_Ar_Condicionado_Split_LG {
-  height: 150px;
-  width: 200px;
-  margin-left: 70px;
-  margin-top: 100px;
-}
-
-.texto_Ar_Condicionado_Split_LG {
-  font-family: "Montserrat";
-  color: black;
-  margin-left: 10px;
-  margin-top: 90px;
-  font-size: 15px;
-}
-
-.preço_Ar_Condicionado_Split_LG {
-  font-family: "Montserrat";
-  color: black;
-  font-weight: bold;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 15px;
-}
-
-.Climatizador_de_Ar_Philco {
-  /* Climatizador de Ar Philco */
-
-  border-radius: 10px;
-  width: 350px;
-  height: 450px;
-  border: 1px solid black;
-  background-color: white;
-  margin-left: 450px;
-  margin-top: -451px;
-}
-
-.img_Climatizador_de_Ar_Philco {
-  height: 150px;
-  width: 200px;
-  margin-left: 70px;
-  margin-top: 100px;
-}
-
-.texto_Climatizador_de_Ar_Philco {
-  font-family: "Montserrat";
-  color: black;
-  margin-left: 10px;
-  margin-top: 90px;
-  font-size: 15px;
-}
-
-.preço_Climatizador_de_Ar_Philco {
-  font-family: "Montserrat";
-  color: black;
-  font-weight: bold;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 15px;
-}
-
-.Em_branco {
-  border-radius: 10px;
-  width: 350px;
-  height: 450px;
-  border: 1px solid black;
-  background-color: white;
-  margin-left: 840px;
-  margin-top: -451px;
-}
 
 /*--------------cabeçalho----------------*/
 .menu-lista {

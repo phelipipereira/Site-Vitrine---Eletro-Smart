@@ -10,196 +10,52 @@
 .titulo {
   color: #e2ac3f;
   margin-left: 70px;
-  margin-top: 150px;
+  margin-top: 60px;
   font-size: 45px;
+  font-weight: normal ;
 }
 
-.Robô_Aspirador_iRobot {
-  /* Robô Aspirador iRobot */
 
-  border-radius: 10px;
-  width: 350px;
-  height: 450px;
-  border: 1px solid black;
-  background-color: white;
-  margin-left: 55px;
+#todos-pdt {
+  justify-content: center;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.box-produto {
   margin-top: 100px;
+  margin-bottom: 100px;
+  border: solid #c8c8c8;
+  border-radius: 20px;
+  width: 220px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
 }
 
-.img_Robô_Aspirador_iRobot {
-  height: 300px;
-  width: 200px;
-  margin-left: 70px;
-  margin-top: 35px;
+.box-produto img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  margin-top: auto;
 }
 
-.texto_Robô_Aspirador_iRobot {
-  font-family: "Montserrat";
+
+.nome {
   color: black;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 15px;
+  margin: 30;
+  margin-top: auto; 
+  text-align: left;
 }
 
-.preço_Robô_Aspirador_iRobot {
-  font-family: "Montserrat";
+.preco {
   color: black;
-  font-weight: bold;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 15px;
-}
-
-.Robô_Aspirador_Xiaomi {
-  /* Robô Aspirador Xiaomi */
-
-  border-radius: 10px;
-  width: 350px;
-  height: 450px;
-  border: 1px solid black;
-  background-color: white;
-  margin-left: 450px;
-  margin-top: -451px;
-}
-
-.img_Robô_Aspirador_Xiaomi {
-  height: 300px;
-  width: 200px;
-  margin-left: 70px;
-  margin-top: 35px;
-}
-
-.texto_Robô_Aspirador_Xiaomi {
-  font-family: "Montserrat";
-  color: black;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 15px;
-}
-.preço_Robô_Aspirador_Xiaomi {
-  font-family: "Montserrat";
-  color: black;
-  font-weight: bold;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 15px;
-}
-.Aspirador_de_Pó_Electrolux {
-  /* Aspirador de Pó Electrolux */
-
-  border-radius: 10px;
-  width: 350px;
-  height: 450px;
-  border: 1px solid black;
-  background-color: white;
-  margin-left: 840px;
-  margin-top: -451px;
-}
-
-.img_Aspirador_de_Pó_Electrolux {
-  height: 150px;
-  width: 200px;
-  margin-left: 70px;
-  margin-top: 100px;
-}
-
-.texto_Aspirador_de_Pó_Electrolux {
-  font-family: "Montserrat";
-  color: black;
-  margin-left: 10px;
-  margin-top: 90px;
-  font-size: 15px;
-}
-
-.preço_Aspirador_de_Pó_Electrolux {
-  font-family: "Montserrat";
-  color: black;
-  font-weight: bold;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 15px;
-}
-
-.Aspirador_Vertical {
-  /* Aspirador Vertical */
-
-  border-radius: 10px;
-  width: 350px;
-  height: 450px;
-  border: 1px solid black;
-  background-color: white;
-  margin-left: 55px;
-  margin-top: 50px;
-}
-
-.img_Aspirador_Vertical {
-  height: 150px;
-  width: 200px;
-  margin-left: 70px;
-  margin-top: 100px;
-}
-
-.texto_Aspirador_Vertical {
-  font-family: "Montserrat";
-  color: black;
-  margin-left: 10px;
-  margin-top: 90px;
-  font-size: 15px;
-}
-
-.preço_Aspirador_Vertical {
-  font-family: "Montserrat";
-  color: black;
-  font-weight: bold;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 15px;
-}
-
-.Aspirador_de_Pó_Portátil {
-  /* Aspirador de Pó Portátil */
-
-  border-radius: 10px;
-  width: 350px;
-  height: 450px;
-  border: 1px solid black;
-  background-color: white;
-  margin-left: 450px;
-  margin-top: -451px;
-}
-
-.img_Aspirador_de_Pó_Portátil {
-  height: 150px;
-  width: 200px;
-  margin-left: 70px;
-  margin-top: 100px;
-}
-
-.texto_Aspirador_de_Pó_Portátil {
-  font-family: "Montserrat";
-  color: black;
-  margin-left: 10px;
-  margin-top: 90px;
-  font-size: 15px;
-}
-
-.preço_Aspirador_de_Pó_Portátil {
-  font-family: "Montserrat";
-  color: black;
-  font-weight: bold;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 15px;
-}
-
-.Em_branco {
-  border-radius: 10px;
-  width: 350px;
-  height: 450px;
-  border: 1px solid black;
-  background-color: white;
-  margin-left: 840px;
-  margin-top: -451px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0 0 0;
 }
 
 /*--------------cabeçalho----------------*/
