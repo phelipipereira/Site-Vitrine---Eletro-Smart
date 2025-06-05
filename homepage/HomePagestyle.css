@@ -82,13 +82,11 @@
   font-size: 30px;
   font-weight: normal;
   margin: 30px;
+  color: #e2ac3f;
+  text-align: center;
 }
 
 #Todos {
-  color: #e2ac3f;
-} 
-
-.apresentação {
   color: #e2ac3f;
 } 
 
@@ -203,15 +201,6 @@
   display: block;
   margin: 0 auto;
   margin-top: auto;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
-* {
-  margin: 0 ;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
 }
 
 /*-------------rodapé---------------*/
