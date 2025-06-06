@@ -72,72 +72,42 @@
   box-shadow: 0px 0.3rem 1rem rgba(0, 0, 0, 0.25);
 }
 
-/*--------------------------------- Categorias ------------------------------------- */
-
-#categorias {
+.titulo {
   color: #e2ac3f;
-}
-
-.apresentação {
-  font-size: 30px;
-  font-weight: normal;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 45px;
   margin: 30px;
+  font-weight: normal ;
+}
+
+
+label[for="ordenar"] {
   color: #e2ac3f;
-  text-align: center;
+  text-align: left;
+   margin-top: 40px;
+   margin-bottom: 20px;
+   margin-left: 110px;
 }
 
-#Todos {
-  color: #e2ac3f;
-} 
-
-.conteudo-box-icon /* */ {
-  color: black;
-  display: flex;
-  gap: 50px;
-  padding: 0;
-  justify-content: center;
-  text-align: center;
+#ordenar {
+  margin: 20px;
+  padding: 2px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #e2ac3f;
+  display: flexbox;
 }
 
-.icone-nome {
-  height: auto;
-  width: auto;
-  transition: 0.3s ease;
-}
 
-/* tira o underline dos links dos ícones */
-.icone-nome a {
-  text-decoration: none;
-  color: black;
-}
+/*-------------------------------  Todos os Produtos ------------------------------------*/
 
-.icone-nome:hover {
-  transform: scale(1.15);
-}
-
-.conteudo-box-icon p {
-  font-size: 25px;
-}
-
-.icone-produto {
-  height: 150px;
-  width: 150px;
-  border-radius: 20px;
-  background-color: #f6e6c5;
-  padding: 20px;
-}
-
-/*------------------------------- Produtos mais vendidos  ------------------------------------*/
-
-
-
-#todos-pdt {
+#Todos-os-Produtos{
   justify-content: center;
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
 }
-
 
 .box-produto {
   margin-top: 20px;
@@ -179,6 +149,23 @@
   margin: 10px 0 0 0;
 }
 
+#Geladeira-s {
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: auto;
+  width: 110px;
+  border-radius: 10px;
+}
+
+#Geladeira-b {
+  width: 120px;
+  border-radius: 10px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: auto;
+}
 
 /*-------------rodapé---------------*/
 /* estilização geral */
@@ -264,6 +251,18 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+  }
+
+  label[for="ordenar"] {
+  color: #e2ac3f;
+   margin: 10px auto;
+   margin-left: 30px;
+}
+  
+  #ordenar {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
   }
 
   /*-------------rodapé---------------*/
