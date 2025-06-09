@@ -155,25 +155,26 @@
 
 /* estilização dos itens da lista */
 .rodape-links li {
-  margin: 40px 0;
-  font-size: 25px;
+  margin: 6px 0;
+  font-size: 28px;
   padding-bottom: 10px;
-  
+  text-shadow: 0px 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+  margin-top: 25px;
 }
 
 /* estilo dos links do rodapé */
 .rodape-links a {
-  background-color: #fff;
   position: relative;
-  color: #e2ac3f;
+  color: white;
   text-decoration: none;
   font-size: 30px;
   box-sizing: border-box; /* inclui borda */
   border-style: solid;
   border-radius: 20px;
-  border-width: 0px;
-  font-weight: normal;
-  padding: 10px;
+  border-width: 3px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 3px;
   transition: letter-spacing 0.4s ease;
 }
 
@@ -196,115 +197,50 @@
 
 /*------------------ RESPONSIVO ------------------*/
 @media (max-width: 768px) {
-  /* Define largura e espaçamento vertical da seção de dúvidas */
-  .Duvidas {
-    max-width: 90%;
-    padding: 20px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-
-  /* Reduz o preenchimento interno e a largura da borda da caixa */
-  .caixa {
-    padding: 15px;
-    border-width: 6px;
-  }
-
-  /* Diminui o tamanho da fonte do título e centraliza o texto */
-  .title {
-    font-size: 28px;
-    text-align: center;
-  }
-
-  /* Diminui a fonte do subtítulo, centraliza e ajusta o espaçamento */
-  .subtitle {
-    font-size: 20px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    text-align: center;
-  }
-
-  /* Alinha os itens da lista verticalmente com pouco espaçamento */
-  .lista {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-  }
-
-  /* Faz com que contato e infos ocupem 100% da largura e fiquem alinhados à esquerda */
-  .contato,
-  .infos {
-    text-align: left;
-    flex: unset;
-    width: 100%;
-  }
-
-  /* Define o tamanho da fonte para os rótulos */
-  .contato {
-    font-size: 16px;
-  }
-
-  /* Define o tamanho da fonte para os dados */
-  .infos {
-    font-size: 15px;
-  }
-  
   /*--------------cabeçalho----------------*/
   /* Torna o menu horizontal com quebra de linha e espaçamento entre itens */
   .menu-lista {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: row;
+    justify-content: center;
     gap: 1rem;
   }
-  
-/*-------------rodapé---------------*/
-/* Alinha os itens do rodapé horizontalmente e permite quebra de linha */
-.rodape-conteudo {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
 
-/* Define que cada lado do rodapé ocupe aproximadamente metade do espaço */
-.rodape-esquerda,
-.rodape-direita {
-  flex: 1 1 45%;
-}
+  /*-------------rodapé---------------*/
+  /* Alinha os itens do rodapé horizontalmente e permite quebra de linha */
+  .rodape-conteudo {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
-/* Reduz o tamanho da fonte e aumenta o padding dos links do rodapé */
-.rodape-links a {
-  font-size: 24px;
-  padding: 6px 12px;
-}
+  /* Define que cada lado do rodapé ocupe aproximadamente metade do espaço */
+  .rodape-esquerda,
+  .rodape-direita {
+    flex: 1 1 45%;
+  }
 
-/* Reduz a altura da logo no rodapé */
-.logo-rodape {
-  height: 150px;
-}
+  /* Reduz o tamanho da fonte e aumenta o padding dos links do rodapé */
+  .rodape-links a {
+    font-size: 24px;
+    padding: 6px 12px;
+  }
 
-/* Adiciona padding horizontal para conteúdo e menu */
-.rodape-conteudo,
-.menu-lista {
-  padding: 0 1rem;
-}
-}
+  /* Reduz a altura da logo no rodapé */
+  .logo-rodape {
+    height: 150px;
+    margin-left: 80px;
+    margin-top: 60px;
+  }
 
+  /* Adiciona padding horizontal para conteúdo e menu */
+  .rodape-conteudo,
+  .menu-lista {
+    padding: 0 1rem;
+  }
+}
 @media (max-width: 480px) {
-  .title {
-    font-size: 24px; /* Diminui o tamanho da fonte do título */
-  }
-
-  .subtitle {
-    font-size: 18px; /* Diminui o tamanho da fonte do subtítulo */
-  }
-
-  .contato,
-  .infos {
-    font-size: 14px; /* Define fonte menor para os textos de contato e informações */
-  }
-
   /*--------------cabeçalho----------------*/
   .logo {
     height: 80px; /* Reduz a altura da logo no cabeçalho */
@@ -322,7 +258,14 @@
 
   .logo-rodape {
     height: 150px; /* Define a altura da logo no rodapé */
+    margin-left: 0; /* Remove a margem esquerda */
   }
+}
+
+/* Permite rolagem horizontal se necessário */
+html,
+body {
+  overflow-x: hidden;
 }
 
 /* Permite rolagem horizontal se necessário */
