@@ -200,10 +200,24 @@
   /*--------------cabeçalho----------------*/
   /* Torna o menu horizontal com quebra de linha e espaçamento entre itens */
   .menu-lista {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+    flex-direction: space-around; 
+    padding: 1rem 1rem; 
+    gap: 10px; 
+  }
+
+  .menu-lista li {
+    margin: 2px 20px;
+    font-size: 16px;
+  }
+
+  .logo {
+    height: 80px; 
+    margin-bottom: 10px; 
+  }
+
+  .menu-lista .item-esquerda,
+  .menu-lista .item-direita {
+    text-align: center; 
   }
 
   /*-------------rodapé---------------*/
@@ -248,17 +262,22 @@
 
   /*-------------rodapé---------------*/
   .rodape-links li {
-    font-size: 12px; /* Reduz o tamanho da fonte dos itens da lista do rodapé */
+    font-size: 10px; /* Reduz o tamanho da fonte dos itens da lista do rodapé */
   }
 
   .rodape-links a {
-    font-size: 16px; /* Diminui a fonte dos links do rodapé */
+    font-size: 10px; /* Diminui a fonte dos links do rodapé */
     padding: 4px 8px; /* Reduz o preenchimento dos links */
+    border-radius: 10px;
   }
 
   .logo-rodape {
     height: 150px; /* Define a altura da logo no rodapé */
     margin-left: 0; /* Remove a margem esquerda */
+  }
+
+  .marca {
+    font-size: 10px;
   }
 }
 

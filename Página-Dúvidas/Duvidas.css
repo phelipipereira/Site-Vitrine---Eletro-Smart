@@ -211,14 +211,64 @@
 
 /*------------------ RESPONSIVO ------------------*/
 @media (max-width: 768px) {
+  /*--------------Nav----------------*/
+
+  .Duvidas {
+    max-width: 85%; /* Aumenta a largura para ocupar mais espaço em telas menores */
+    margin-top: 50px; /* Reduz a margem superior */
+    margin-bottom: 50px; /* Reduz a margem inferior */
+    padding: 15px 20px; /* Reduz o preenchimento interno */
+  }
+
+  .title {
+    font-size: 24px; /* Reduz o tamanho da fonte do título */
+  }
+
+  .subtitle {
+    font-size: 18px; /* Reduz o tamanho da fonte do subtítulo */
+    padding-top: 30px; /* Reduz o preenchimento superior */
+    padding-bottom: 15px; /* Reduz o preenchimento inferior */
+  }
+
+  .lista {
+    font-size: 10px;
+    margin-bottom: 10px;
+    flex-direction: column; /* Empilha os itens da lista verticalmente */
+    align-items: center; /* Centraliza os itens */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .contato,
+  .infos {
+    flex: none; /* Remove a proporção flexível */
+    width: 100%; /* Ocupa a largura total */
+    text-align: center; /* Centraliza o texto */
+  }
+
+
   /*--------------cabeçalho----------------*/
   /* Torna o menu horizontal com quebra de linha e espaçamento entre itens */
   .menu-lista {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+    flex-direction: space-around; 
+    padding: 1rem 1rem; 
+    gap: 10px; 
   }
+
+  .menu-lista li {
+    margin: 2px 20px;
+    font-size: 16px;
+  }
+
+  .logo {
+    height: 80px; 
+    margin-bottom: 10px; 
+  }
+
+  .menu-lista .item-esquerda,
+  .menu-lista .item-direita {
+    text-align: center; 
+  }
+
 
   /*-------------rodapé---------------*/
   /* Alinha os itens do rodapé horizontalmente e permite quebra de linha */
@@ -254,6 +304,7 @@
     padding: 0 1rem;
   }
 }
+    
 @media (max-width: 480px) {
   /*--------------cabeçalho----------------*/
   .logo {
@@ -266,7 +317,7 @@
   }
 
   .rodape-links a {
-    font-size: 16px; /* Diminui a fonte dos links do rodapé */
+    font-size: 14px; /* Diminui a fonte dos links do rodapé */
     padding: 4px 8px; /* Reduz o preenchimento dos links */
   }
 
