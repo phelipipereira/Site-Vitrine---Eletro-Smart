@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="Logo Loja EletroSmart2.png" />
     <link rel="stylesheet" href="HomePagestyle.css" />
-    <link rel="stylesheet" href="style.css" />
+    
+
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -91,44 +92,63 @@
         <p class="apresentação">Aproveite nossos produtos mais vendidos!</p>
         <br />
 
-        <div id="todos-pdt">
-          <!-- De acordo com a página Home, os produtos são referidos da esquerda para a direita e de cima para baixo. -->
-          <div class="box-produto">
-            <img src="../assets/img/HomePage/geladeirabrastemp.avif" alt="Geladeira Brastemp">
-            <p class="nome">Geladeira Brastemp Frost Free Duplex 375 Litros Inox</p>
-            <p class="preco">R$ 3.047,22</p>
+
+        <div class="carrossel-container">
+          <button class="seta seta-esquerda">←</button>
+
+          <div class="carrossel-slides ">
+            
+            <!------ Slide 1------->
+            <div class="slide">
+              <div class="box-produto">
+                <img src="../assets/img/HomePage/geladeirabrastemp.avif" alt="Geladeira Brastemp">
+                <p class="nome">Geladeira Brastemp Frost Free Duplex 375 Litros Inox</p>
+                <p class="preco">R$ 3.047,22</p>
+              </div>
+
+              <div class="box-produto">
+                <img src="../assets/img/HomePage/Robo Aspirador Xiaomi.png" alt="Robô Aspirador Xiaomi">
+                <p class="nome">Robô Aspirador Xiaomi Mi Robot Vacuum com Mapeamento</p>
+                <p class="preco">R$ 1.499,22</p>
+              </div>
+            </div>
+
+            <!------ Slide 2------->
+            <div class="slide">
+              <div class="box-produto">
+                <img src="../assets/img/HomePage/Ventilador de mesa.png" alt="Ventilador de Mesa Arno">
+                <p class="nome">Ventilador de Mesa Arno Turbo Force 40cm</p>
+                <p class="preco">R$ 209,00</p>
+              </div>
+              
+              <div class="box-produto">
+                <img src="../assets/img/HomePage/Robô Aspirador.png" alt="Robô Aspirador iRobot">
+                <p class="nome">Robô Aspirador iRobot Roomba 692 Wi-Fi com App</p>
+                <p class="preco">R$ 1.799,99</p>
+              </div>
+            </div>
+
+            <!------ Slide 3------->
+            <div class="slide">
+              <div class="box-produto">
+                <img src="../assets/img/HomePage/Ventilador de Coluna.png" alt="Ventilador de Coluna Mondial">
+                <p class="nome">Ventilador de Coluna Mondial Turbo 40cm 6 Pás </p>
+                <p class="preco">R$ 189,99</p>
+              </div>
+
+              <div class="box-produto">
+                <img src="../assets/img/HomePage/Geladeira sansnug side by side.png" alt="Geladeira Samsung">
+                <p class="nome">Geladeira Samsung Side by Side 501 Litros Inverter </p>
+                <p class="preco">R$ 5.922,01</p>
+              </div>
+            </div>
+
           </div>
 
-          <div class="box-produto">
-            <img src="../assets/img/HomePage/Robo Aspirador Xiaomi.png" alt="Robô Aspirador Xiaomi">
-            <p class="nome">Robô Aspirador Xiaomi Mi Robot Vacuum com Mapeamento</p>
-            <p class="preco">R$ 1.499,22</p>
-          </div>
+          <button class="seta seta-direita" >→</button>
 
-          <div class="box-produto">
-            <img src="../assets/img/HomePage/Ventilador de mesa.png" alt="Ventilador de Mesa Arno">
-            <p class="nome">Ventilador de Mesa Arno Turbo Force 40cm</p>
-            <p class="preco">R$ 209,00</p>
-          </div>
-          
-          <div class="box-produto">
-            <img src="../assets/img/HomePage/Robô Aspirador.png" alt="Robô Aspirador iRobot">
-            <p class="nome">Robô Aspirador iRobot Roomba 692 Wi-Fi com App</p>
-            <p class="preco">R$ 1.799,99</p>
-          </div>
-
-          <div class="box-produto">
-            <img src="../assets/img/HomePage/Ventilador de Coluna.png" alt="Ventilador de Coluna Mondial">
-            <p class="nome">Ventilador de Coluna Mondial Turbo 40cm 6 Pás </p>
-            <p class="preco">R$ 189,99</p>
-          </div>
-
-          <div class="box-produto">
-            <img src="../assets/img/HomePage/Geladeira sansnug side by side.png" alt="Geladeira Samsung">
-            <p class="nome">Geladeira Samsung Side by Side 501 Litros Inverter </p>
-            <p class="preco">R$ 5.922,01</p>
-          </div>
         </div>
+
       </div>
 
 
@@ -160,5 +180,6 @@
       </div>
     </footer>
     <!-- rodapé -->
+     <script src="HomePage.js"></script>
   </body>
 </html>
