@@ -1,0 +1,29 @@
+{
+  "name": "site-vitrine---eletro-smart",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Odahcam06/Site-Vitrine---Eletro-Smart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Odahcam06/Site-Vitrine---Eletro-Smart/issues"
+  },
+  "homepage": "https://github.com/Odahcam06/Site-Vitrine---Eletro-Smart#readme",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "multer": "^2.0.1",
+    "sqlite3": "^5.1.7"
+  }
+}

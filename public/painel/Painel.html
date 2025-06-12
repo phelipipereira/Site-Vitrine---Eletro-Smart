@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Painel do Funcionário</title>
+    <link rel="stylesheet" href="./Painel.css" />
+  </head>
+  <body>
+    <header class = cabecalho>
+      <nav class="menu">
+        <ul class="menu-lista">
+          <li class="item-esquerda">
+            <a id="logoutBtn"
+              >Sair</a
+            >
+          </li>
+          <li class="item-logo">
+            <a href="../homepage/HomePage.html">
+              <img
+                src="../assets/img/Logo Loja EletroSmart.png"
+                alt="Logo da EletroSmart"
+                class="logo"
+              />
+            </a>
+          </li>
+          <li class="item-direita">
+            <div id="userInfo">Carregando usuário...</div>
+          </li>
+        </ul>
+      </nav>
+      
+      
+    </header>
+
+    <main>
+
+       <p class="apresentação">
+          Painel Administrativo
+        </p>
+      
+
+      <section id="produtosSection">
+        <h2>Produtos Cadastrados</h2>
+        <ul id="produtosList">
+          <!-- Os produtos serão renderizados via JS com botões de editar/deletar -->
+        </ul>
+      </section>
+
+      <section id="adicionarProdutoSection">
+        <h2>Cadastro de Produto</h2>
+        <form id="formProduto">
+          <input type="text" name="nome" placeholder="Nome" required />
+          <input type="text" name="preco" placeholder="Preço" required />
+          <input type="file" name="imagem" accept="image/*" required>
+          <select name="categoria" required>
+            <option value="limpeza">Limpeza</option>
+            <option value="cozinha">Cozinha</option>
+            <option value="lavanderia">Lavanderia</option>
+            <option value="climatizacao">Climatização</option>
+          </select>
+          <select name="caracteristica" required>
+            <option value="mais vendido">Mais vendidos</option>
+            <option value="padrao">Padrão</option>
+          </select>
+
+
+          <button type="submit">Cadastrar</button>
+        </form>
+        <div id="msgProduto"></div>
+      </section>
+
+      <section id="adicionarFuncionarioSection" style="display:none;">
+        <h2>Cadastro de Funcionário (Apenas Líder)</h2>
+        <form id="formFuncionario">
+          <input type="text" name="nome" placeholder="Nome" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="password" name="senha" placeholder="Senha" required />
+          <select name="tipo" required>
+            <option value="funcionario">Funcionário</option>
+            <option value="lider">Líder</option>
+          </select>
+          <button type="submit">Cadastrar Funcionário</button>
+        </form>
+        <div id="msgFuncionario"></div>
+      </section>
+    </main>
+
+    <script src="Painel.js"></script>
+  </body>
+</html>

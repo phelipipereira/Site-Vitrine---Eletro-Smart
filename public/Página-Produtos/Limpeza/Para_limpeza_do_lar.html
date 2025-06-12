@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Para a limpeza de seu lar</title>
+    <link rel="stylesheet" type="text/css" href="Para_limpeza_do_lar.css" />
+    <script src="Para_limpeza_do_lar.js" defer></script>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,
+    wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;
+    0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserr
+    at:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family
+    =Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav class="menu">
+        <ul class="menu-lista">
+          <li class="item-esquerda">
+            <a href="../../Página-Dúvidas/Duvidas.html"
+              >Dúvidas</a
+            >
+            <i class="bx bx-message bx-tada-hover"></i>
+            <!-- adiciona ícone e animação -->
+          </li>
+          <li class="item-logo">
+            <a href="../../homepage/HomePage.html">
+              <img
+                src="../../assets/img/Logo Loja EletroSmart.png"
+                alt="Logo da EletroSmart"
+                class="logo"
+              />
+            </a>
+          </li>
+          <li class="item-direita"><a href="../../Pagina-Sobre/Sobre.html">Quem somos nós?</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- os 3 itens do cabeçalho estão organizados em forma de lista para a logo ficar entre eles -->
+    <!-- clicar em cada item deve levar a alguma parte do site -->
+
+    <h1 class="titulo">Para a limpeza de seu lar</h1>
+    <!-- titulo da subpágina -->
+    
+    <label for="ordenar">Você pode ordernar por:</label>
+    <select id="ordenar">
+        <option value="Maior-preço">Produtos com menores preços</option>
+        <option value="Menor-preço">Produtos com maiores preços</option>
+        <option value="a-z">Ordem alfabética: A-Z</option>
+        <option value="z-a">Ordem alfabética: Z-A</option>
+    </select>
+
+    <div id="todos-pdt">
+          
+    </div>
+
+    <footer class="rodape">
+      <div class="rodape-conteudo">
+        <div class="rodape-esquerda">
+          <ul class="rodape-links">
+            <li><p>Alguma dúvida?</p></li>
+            <li>
+              <a href="../../Página-Dúvidas/Duvidas.html"
+                >Entre em contato</a
+              >
+            </li>
+            <li><p>Conheça mais sobre a EletroSmart!</p></li>
+            <li><a href="../../Pagina-Sobre/Sobre.html">Sobre nós</a></li>
+          </ul>
+        </div>
+
+        <div class="rodape-direita">
+          <img
+            src="../../assets/img/Logo Loja EletroSmart.png"
+            alt="Logo da EletroSmart"
+            class="logo-rodape"
+          />
+          <p>&copy; 2025 EletroSmart. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- rodapé -->
+  </body>
+</html>

@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Exile&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*-----------------------------Cabeçalho--------------------------------*/
+.menu-lista {
+  list-style: none; /* garante que a lista horizontal não tenha marcadores */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  max-width: 1200px; /* limita largura para não esticar demais */
+  margin: 0 auto; /* centraliza horizontalmente no cabeçalho */
+  width: 100%;
+}
+
+/* coloca sombra nos textos e adiciona interação quando passa o mouse */
+.menu-lista .item-esquerda {
+  text-shadow: 0px 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+.menu-lista .item-esquerda:hover {
+  transform: scale(1.15);
+}
+
+#userInfo{
+ color: #fff;
+}
+/* muda a cor do ícone para branco e da um espaçamento */
+.bx {
+  color: #fff;
+  gap: 3px;
+}
+.menu-lista .item-direita {
+  text-shadow: 0px 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+
+/* remove margem padrão */
+.menu-lista li {
+  margin: 0;
+}
+
+/* tira a underline dos textos e muda a cor para branco */
+.menu-lista a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* estiliza a logo */
+.logo {
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  filter: brightness(0) invert(1); /* muda a cor para branco */
+  transition: transform 0.3s ease;
+}
+
+/* muda o tamanho da logo quando o mouse passa por cima */
+
+.menu-lista .logo:hover {
+  transform: scale(1.15);
+}
+
+/* estilização básica */
+.cabecalho {
+  background-color: #e2ac3f;
+  padding: 10px 0;
+  box-shadow: 0px 0.3rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+/*--------------------------------------Corpo-------------------------------------*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 ;
+  background-color: #f9f9f9;
+
+}
+
+.apresentação {
+  font-size: 45px;
+  font-weight: normal;
+  margin: 30px;
+  color: #e2ac3f;
+  text-align: center;
+}
+
+#produtosList li {
+  display: flex;
+  flex-direction: column;
+  background: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.produto-info {
+  margin-bottom: 0.5rem;
+  font-size: 15px;
+  font-weight: 500px;
+}
+
+.produto-acoes {
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+.produto-acoes button:hover {
+  background-color: #5a6268;
+}
+
+.produto-acoes .btn-excluir {
+  background-color: #dc3545;
+}
+
+.produto-acoes .btn-excluir:hover {
+  background-color: #c82333;
+}
+
+.produto-acoes .btn-editar {
+  background-color: #28a745;
+}
+
+.produto-acoes .btn-editar:hover {
+  background-color: #218838;
+}
+
+h1, h2 {
+  margin: 0 0 1rem 0;
+}
+
+
+
+button {
+  cursor: pointer;
+  padding: 7px;
+  background-color: #e2ac3f;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #c08716;
+  transform: scale(1.05);
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+input, select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#msgProduto, #msgFuncionario {
+  color: red;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
