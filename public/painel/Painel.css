@@ -179,3 +179,66 @@ input, select {
   font-weight: bold;
   margin-top: 0.5rem;
 }
+
+/* Seção Usuários Cadastrados */
+#usuariosList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#usuariosList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+#usuariosList li:hover {
+  background-color: #eaeaea;
+}
+
+.usuario-info {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  flex-grow: 1; /* para ocupar o máximo possível */
+}
+
+.usuario-acoes {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.usuario-acoes button {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.usuario-acoes .btn-editar-usuario {
+  background-color: #28a745;
+}
+
+.usuario-acoes .btn-editar-usuario:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+}
+
+.usuario-acoes .btn-excluir-usuario {
+  background-color: #dc3545;
+}
+
+.usuario-acoes .btn-excluir-usuario:hover {
+  background-color: #c82333;
+  transform: scale(1.1);
+}

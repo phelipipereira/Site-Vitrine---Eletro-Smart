@@ -66,7 +66,7 @@ async function carregarProdutos() {
     const response = await fetch("/api/produtos");
     todosProdutos = await response.json();
 
-    produtos = todosProdutos.filter(produto => produto.categoria === "climatização");
+    produtos = todosProdutos.filter(produto => produto.categoria === "climatizacao");
 
     mostrarProdutos(produtos);
   } catch (erro) {

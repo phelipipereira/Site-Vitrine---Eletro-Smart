@@ -89,7 +89,7 @@ app.get("/api/produtos", (req, res) => {
   });
 });
 
-// *** NOVA ROTA ADICIONADA ***
+
 // API para obter um produto pelo ID (necessária para edição)
 app.get("/api/produtos/:id", autenticarFuncionario, (req, res) => {
   const id = req.params.id;
@@ -147,20 +147,36 @@ app.delete("/api/produtos/:id", autenticarFuncionario, (req, res) => {
   });
 });
 
-// API protegida para adicionar usuários (somente líder)
+// API protegida para adicionar usuários (somente líderes)
 app.post("/api/usuarios", autenticarLider, (req, res) => {
   const { nome, email, senha, tipo } = req.body;
   const senhaCriptografada = bcrypt.hashSync(senha, 10);
 
   db.run(
     "INSERT INTO usuarios (nome, email, senha, tipo) VALUES (?, ?, ?, ?)",
-    [nome, email, senhaCriptografada, tipo || "funcionario"],
+    [nome, email, senhaCriptografada, tipo],
     (err) => {
       if (err) return res.status(500).json({ sucesso: false, erro: err.message });
       res.json({ sucesso: true });
     }
   );
 });
+
+// API protegida para deletar usuário (somente líderes)
+app.delete("/api/usuarios/:id", autenticarLider, (req, res) => {
+  const id = req.params.id;
+
+  db.run("DELETE FROM usuarios WHERE id = ?", [id], function(err) {
+    if (err) {
+      return res.status(500).json({ sucesso: false, erro: err.message });
+    }
+    if (this.changes === 0) {
+      return res.status(404).json({ sucesso: false, erro: "Usuário não encontrado" });
+    }
+    res.json({ sucesso: true, mensagem: "Usuário deletado com sucesso" });
+  });
+});
+
 
 // API para obter dados do usuário logado
 app.get("/api/usuario-logado", (req, res) => {
@@ -176,6 +192,42 @@ app.get("/api/usuario-logado", (req, res) => {
     res.json(user);
   });
 });
+
+// API protegida para editar usuário (somente líderes)
+app.put("/api/usuarios/:id", autenticarLider, (req, res) => {
+  const id = req.params.id;
+  const { nome, email, senha, tipo } = req.body;
+
+  // Se o campo senha for enviado, criptografar
+  let query, params;
+  if (senha) {
+    const senhaCriptografada = bcrypt.hashSync(senha, 10);
+    query = "UPDATE usuarios SET nome = ?, email = ?, senha = ?, tipo = ? WHERE id = ?";
+    params = [nome, email, senhaCriptografada, tipo, id];
+  } else {
+    query = "UPDATE usuarios SET nome = ?, email = ?, tipo = ? WHERE id = ?";
+    params = [nome, email, tipo, id];
+  }
+
+  db.run(query, params, function(err) {
+    if (err) {
+      return res.status(500).json({ sucesso: false, erro: err.message });
+    }
+    if (this.changes === 0) {
+      return res.status(404).json({ sucesso: false, erro: "Usuário não encontrado" });
+    }
+    res.json({ sucesso: true, mensagem: "Usuário atualizado com sucesso" });
+  });
+});
+
+app.get("/api/usuarios", autenticarLider, (req, res) => {
+  db.all("SELECT id, nome, email, tipo FROM usuarios", (err, rows) => {
+    if (err) return res.status(500).json({ erro: err.message });
+    res.json(rows);
+  });
+});
+
+
 
 const PORT = 3000;
 app.listen(PORT, () => {
