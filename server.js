@@ -19,7 +19,7 @@ const db = new Pool({
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "homepage", "HomePage.hmtl"));
+  res.sendFile(path.join(__dirname, "public", "homepage", "HomePage.html"));
 });
 
 const storage = multer.diskStorage({
