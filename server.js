@@ -15,8 +15,12 @@ const db = new Pool({
   password: process.env.DB_PASSWORD,
   port: process.env.DB_PORT,
 });
+
 app.use(express.static("public"));
 
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "homepage", "HomePage.hmtl"));
+});
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => cb(null, "public/assets"),
