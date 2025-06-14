@@ -295,6 +295,52 @@
 
 /*------------------ RESPONSIVO ------------------*/
 @media (max-width: 768px) {
+
+   /*--------------Categorias----------------*/
+  .apresentação {
+    font-size: 23px;
+    margin-top: 30px;
+  }
+
+  .icone-produto {
+    height: 100px;
+    width: 100px;
+
+  }
+
+  .icone-nome p {
+    font-size: 20px;
+  }
+
+  .conteudo-box-icon {
+    gap:30px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /*--------------Produtos mais vendidos----------------*/
+
+  .box-produto {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .box-produto img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .nome {
+    font-size: 20px;
+    align-self: flex-start;
+  }
+
+  .preco {
+    align-self: flex-start;
+  }
+  
   /*--------------cabeçalho----------------*/
   /* Torna o menu horizontal com quebra de linha e espaçamento entre itens */
   .menu-lista {

@@ -47,9 +47,8 @@
     text-align: center;
 }
 
-.Mapa {
-    display: block;
-    margin: 0 auto;  
+#Bloco3 {
+ text-align: center; /* centraliza a imagem, sem que esta pegue espaço desnecessario na div */
 }
 
 .Endereço {
@@ -196,6 +195,37 @@
 }
 
 /*------------------ RESPONSIVO ------------------*/
+
+@media (max-width: 1027px) {
+
+   .Quem-somos {
+    font-size: 35px;
+  }
+
+  .Quem-somos-texto {
+    font-size: 25px;
+    padding: 30px;
+  }
+
+  .Nossos-valores {
+    font-size: 35px;
+  }
+
+  .Nossos-valores-Texto {
+    font-size: 25px;
+    margin: 1rem 0;
+  }
+
+  .Nossa-localidade {
+    font-size: 35px;
+  }
+
+  .Mapa {
+    height: 20rem;
+  }
+
+}
+
 @media (max-width: 768px) {
   /*--------------cabeçalho----------------*/
   /* Torna o menu horizontal com quebra de linha e espaçamento entre itens */
