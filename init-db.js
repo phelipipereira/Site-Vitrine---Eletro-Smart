@@ -1,53 +1,54 @@
-const sqlite3 = require("sqlite3").verbose();
+const { Pool } = require("pg");
 const bcrypt = require("bcryptjs");
 
-const db = new sqlite3.Database("database.sqlite");
+const db = new Pool({
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT,
+});
 
-db.serialize(() => {
-  db.run(`CREATE TABLE IF NOT EXISTS usuarios (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    nome TEXT,
-    email TEXT UNIQUE,
-    senha TEXT,
-    tipo TEXT DEFAULT 'funcionario' 
-  )`);
+(async () => {
+  try {
+    await db.query(`
+      CREATE TABLE IF NOT EXISTS usuarios (
+        id SERIAL PRIMARY KEY,
+        nome TEXT,
+        email TEXT UNIQUE,
+        senha TEXT,
+        tipo TEXT DEFAULT 'funcionario'
+      )
+    `);
 
-  db.run(`CREATE TABLE IF NOT EXISTS produtos (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    nome TEXT,
-    preco TEXT,
-    imagem TEXT,
-    categoria TEXT,
-    caracteristica TEXT
-  )`);
+    await db.query(`
+      CREATE TABLE IF NOT EXISTS produtos (
+        id SERIAL PRIMARY KEY,
+        nome TEXT,
+        preco NUMERIC,
+        imagem TEXT,
+        categoria TEXT,
+        caracteristica TEXT
+      )
+    `);
 
-  // Cria o usuário líder (admin) com tipo 'lider'
-  const senhaCriptografada = bcrypt.hashSync("1234", 10);
+    const { rows } = await db.query("SELECT * FROM usuarios WHERE email = $1", ["admin@site.com"]);
 
-  db.get("SELECT * FROM usuarios WHERE email = ?", ["admin@site.com"], (err, row) => {
-    if (err) {
-      console.error("Erro na consulta:", err.message);
-    } else if (!row) {
-      db.run(
-        `INSERT INTO usuarios (nome, email, senha, tipo) VALUES (?, ?, ?, ?)`,
-        ["Admin", "admin@site.com", senhaCriptografada, "lider"],
-        (err) => {
-          if (err) console.error("Erro ao inserir admin:", err.message);
-          else console.log("Usuário líder (admin) criado com sucesso.");
-
-          // Fecha o DB aqui, depois que tudo terminou
-          db.close(() => {
-            console.log("Banco de dados finalizado.");
-          });
-        }
+    if (rows.length === 0) {
+      const senhaAdmin = "1234";
+      const senhaCriptografada = bcrypt.hashSync(senhaAdmin, 10);
+      await db.query(
+        "INSERT INTO usuarios (nome, email, senha, tipo) VALUES ($1, $2, $3, $4)",
+        ["Admin", "admin@site.com", senhaCriptografada, "lider"]
       );
+      console.log("Usuário líder (admin) criado com sucesso.");
     } else {
       console.log("Usuário admin já existe.");
-
-      // Fecha o DB aqui também, pois não precisa inserir
-      db.close(() => {
-        console.log("Banco de dados finalizado.");
-      });
     }
-  });
-});
+  } catch (err) {
+    console.error("Erro ao inicializar o banco:", err);
+  } finally {
+    await db.end();
+    console.log("Conexão com o banco encerrada.");
+  }
+})();
