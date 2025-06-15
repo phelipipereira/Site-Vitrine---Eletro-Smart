@@ -282,7 +282,8 @@
   }
 
   .rodape-links a {
-    font-size: 16px; /* Diminui a fonte dos links do rodapé */
+    font-size: 10px; /* Diminui a fonte dos links do rodapé */
+    border-radius: 10px;
     padding: 4px 8px; /* Reduz o preenchimento dos links */
   }
 
@@ -298,8 +299,3 @@ body {
   overflow-x: hidden;
 }
 
-/* Permite rolagem horizontal se necessário */
-html,
-body {
-  overflow-x: hidden;
-}

@@ -5,7 +5,6 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-/*  */
 /*--------------cabeçalho----------------*/
 .menu-lista {
   list-style: none; /* garante que a lista horizontal não tenha marcadores */
@@ -251,13 +250,16 @@
   padding: 0;
 }
 
+.titulo-rodape {
+  margin-top: 25px;
+}
+
 /* estilização dos itens da lista */
 .rodape-links li {
   margin: 6px 0;
-  font-size: 28px;
+  font-size: 20px;
   padding-bottom: 10px;
   text-shadow: 0px 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
-  margin-top: 25px;
 }
 
 /* estilo dos links do rodapé */
@@ -265,7 +267,7 @@
   position: relative;
   color: white;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   box-sizing: border-box; /* inclui borda */
   border-style: solid;
   border-radius: 20px;

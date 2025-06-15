@@ -167,13 +167,16 @@
   padding: 0;
 }
 
+.titulo-rodape {
+  margin-top: 25px;
+}
+
 /* estilização dos itens da lista */
 .rodape-links li {
   margin: 6px 0;
   font-size: 28px;
   padding-bottom: 10px;
   text-shadow: 0px 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
-  margin-top: 25px;
 }
 
 /* estilo dos links do rodapé */
@@ -211,6 +214,41 @@
 
 /*------------------ RESPONSIVO ------------------*/
 @media (max-width: 768px) {
+
+/*--------------Nav----------------*/Add commentMore actions
+
+  .Duvidas {
+    max-width: 85%; /* Aumenta a largura para ocupar mais espaço em telas menores */
+    margin-top: 50px; /* Reduz a margem superior */
+    margin-bottom: 50px; /* Reduz a margem inferior */
+    padding: 15px 20px; /* Reduz o preenchimento interno */
+  }
+
+  .title {
+    font-size: 24px; /* Reduz o tamanho da fonte do título */
+  }
+
+  .subtitle {
+    font-size: 18px; /* Reduz o tamanho da fonte do subtítulo */
+    padding-top: 30px; /* Reduz o preenchimento superior */
+    padding-bottom: 15px; /* Reduz o preenchimento inferior */
+  }
+
+  .lista {
+    font-size: 10px;
+    margin-bottom: 10px;
+    flex-direction: column; /* Empilha os itens da lista verticalmente */
+    align-items: center; /* Centraliza os itens */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .contato,
+  .infos {
+    flex: none; /* Remove a proporção flexível */
+    width: 100%; /* Ocupa a largura total */
+    text-align: center; /* Centraliza o texto */
+  }
+
   /*--------------cabeçalho----------------*/
   /* Torna o menu horizontal com quebra de linha e espaçamento entre itens */
   .menu-lista {
@@ -255,6 +293,35 @@
   }
 }
 @media (max-width: 480px) {
+
+/*--------------Nav----------------*/
+
+  .Duvidas {
+    max-width: 85%; /* Aumenta a largura para ocupar mais espaço em telas menores */
+    margin-top: 50px; /* Reduz a margem superior */
+    margin-bottom: 50px; /* Reduz a margem inferior */
+    padding: 15px 20px; /* Reduz o preenchimento interno */
+  }
+
+  .title {
+    font-size: 16px; /* Reduz o tamanho da fonte do título */
+  }
+
+  .subtitle {
+    font-size: 12px; /* Reduz o tamanho da fonte do subtítulo */
+    padding-top: 10px; /* Reduz o preenchimento superior */
+    padding-bottom: 10px; /* Reduz o preenchimento inferior */
+  }
+
+  .lista {
+    font-size: 8px;
+    margin-bottom: 10px;
+    flex-direction: column; /* Empilha os itens da lista verticalmente */
+    align-items: center; /* Centraliza os itens */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  
   /*--------------cabeçalho----------------*/
   .logo {
     height: 80px; /* Reduz a altura da logo no cabeçalho */
@@ -266,7 +333,8 @@
   }
 
   .rodape-links a {
-    font-size: 16px; /* Diminui a fonte dos links do rodapé */
+    font-size: 12px; /* Diminui a fonte dos links do rodapé */
+    border-radius: 10px;
     padding: 4px 8px; /* Reduz o preenchimento dos links */
   }
 
