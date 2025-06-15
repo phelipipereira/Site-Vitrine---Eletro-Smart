@@ -1,23 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Exile&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
 /*--------------cabeçalho----------------*/
 .menu-lista {
-  list-style: none; /* garante que a lista horizontal não tenha marcadores */
+  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  max-width: 1200px; /* limita largura para não esticar demais */
-  margin: 0 auto; /* centraliza horizontalmente no cabeçalho */
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
 }
 
-/* coloca sombra nos textos e adiciona interação quando passa o mouse */
 .menu-lista .item-esquerda {
   text-shadow: 0px 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
@@ -26,7 +27,6 @@
   transform: scale(1.15);
 }
 
-/* muda a cor do ícone para branco e da um espaçamento */
 .bx {
   color: #fff;
   gap: 3px;
@@ -39,32 +39,25 @@
   transform: scale(1.15);
 }
 
-/* remove margem padrão */
 .menu-lista li {
   margin: 0;
 }
-
-/* tira a underline dos textos e muda a cor para branco */
 .menu-lista a {
   text-decoration: none;
   color: #fff;
 }
 
-/* estiliza a logo */
 .logo {
   height: 100px;
   display: block;
   margin: 0 auto;
-  filter: brightness(0) invert(1); /* muda a cor para branco */
+  filter: brightness(0) invert(1);
   transition: transform 0.3s ease;
 }
-
-/* muda o tamanho da logo quando o mouse passa por cima */
 .menu-lista .logo:hover {
   transform: scale(1.15);
 }
 
-/* estilização básica */
 .cabecalho {
   background-color: #e2ac3f;
   padding: 10px 0;
@@ -72,11 +65,9 @@
 }
 
 /*--------------------------------- Categorias ------------------------------------- */
-
 #categorias {
   color: #e2ac3f;
 }
-
 .apresentação {
   font-size: 30px;
   font-weight: normal;
@@ -84,9 +75,7 @@
   color: #e2ac3f;
   text-align: center;
 }
-
-
-.conteudo-box-icon /* */ {
+.conteudo-box-icon {
   color: black;
   display: flex;
   gap: 50px;
@@ -94,27 +83,21 @@
   justify-content: center;
   text-align: center;
 }
-
 .icone-nome {
   height: auto;
   width: auto;
   transition: 0.3s ease;
 }
-
-/* tira o underline dos links dos ícones */
 .icone-nome a {
   text-decoration: none;
   color: black;
 }
-
 .icone-nome:hover {
   transform: scale(1.15);
 }
-
 .conteudo-box-icon p {
   font-size: 25px;
 }
-
 .icone-produto {
   height: 150px;
   width: 150px;
@@ -124,8 +107,6 @@
 }
 
 /*------------------------------- Produtos mais vendidos  ------------------------------------*/
-
-
 .carrossel-container {
   display: flex;
   align-items: center;
@@ -136,20 +117,17 @@
   overflow: hidden;
   justify-content: center;
 }
-
 .carrossel-slides {
   display: flex;
   width: 100%;
   transition: transform 0.5s ease-in-out;
 }
-
 .slide {
   min-width: 100%;
   display: flex;
   justify-content: center;
   gap: 50px;
 }
-
 .seta {
   background-color: #e2ac3f;
   color: white;
@@ -163,34 +141,28 @@
   transform: translateY(-50%);
   border-radius: 100%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
-
 .seta:hover {
-  transform: translateY(-50%) scale(1.3); 
+  transform: translateY(-50%) scale(1.3);
 }
-
 .seta-esquerda {
   left: 10px;
-  
 }
-
 .seta-direita {
   right: 10px;
 }
-
 .box-produto {
   margin-top: 20px;
   margin-bottom: 20px;
   border: solid #c8c8c8;
   border-radius: 20px;
-  width: 280px;           
-  height: 420px;          
-  padding: 15px;          
+  width: 280px;
+  height: 420px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
 }
-
 .box-produto img {
   max-width: 100%;
   height: auto;
@@ -198,19 +170,15 @@
   margin: 0;
   margin-top: auto;
 }
-
 .box-produto p {
   margin: 10px;
 }
-
 .nome {
   color: black;
   margin: 30;
-  margin-top: auto; 
+  margin-top: auto;
   text-align: left;
 }
-
-
 .preco {
   color: black;
   font-size: 20px;
@@ -218,10 +186,7 @@
   margin: 10px 0 0 0;
 }
 
-
 /*-------------rodapé---------------*/
-
-/* estilização geral */
 .rodape {
   background-color: #e2ac3f;
   padding: 20px 0;
@@ -231,44 +196,35 @@
   margin-top: 40px;
 }
 .rodape-conteudo {
-  max-width: 1200px; /* largura máxima para não esticar em telas grandes */
-  margin: 0 auto; /* centraliza horizontalmente */
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-/* área esquerda do rodapé */
 .rodape-esquerda {
-  flex: 1; //* ocupa todo o espaço disponível */
+  flex: 1;
 }
-
-/* lista com os links do rodapé */
 .rodape-links {
   list-style: none;
   padding: 0;
 }
-
 .titulo-rodape {
   margin-top: 25px;
 }
-
-/* estilização dos itens da lista */
 .rodape-links li {
   margin: 6px 0;
   font-size: 20px;
   padding-bottom: 10px;
   text-shadow: 0px 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
 }
-
-/* estilo dos links do rodapé */
 .rodape-links a {
   position: relative;
   color: white;
   text-decoration: none;
   font-size: 25px;
-  box-sizing: border-box; /* inclui borda */
+  box-sizing: border-box;
   border-style: solid;
   border-radius: 20px;
   border-width: 3px;
@@ -277,143 +233,185 @@
   padding: 3px;
   transition: letter-spacing 0.4s ease;
 }
-
-/* efeito ao passar mouse por cima dos links */
 .rodape-links a:hover {
   letter-spacing: 2px;
 }
-
-/* área da direita do rodapé (logo) */
 .rodape-direita {
-  flex-shrink: 0; /* impede que a logo encolha em telas menores */
+  flex-shrink: 0;
 }
-
-/* estilo da logo no rodapé */
 .logo-rodape {
-  display: block; /* garante que a logo se comporte como um bloco */
+  display: block;
   height: 250px;
   filter: brightness(0) invert(1);
 }
 
 /*------------------ RESPONSIVO ------------------*/
 @media (max-width: 768px) {
-
-   /*--------------Categorias----------------*/
   .apresentação {
     font-size: 23px;
     margin-top: 30px;
   }
-
   .icone-produto {
     height: 100px;
     width: 100px;
-
   }
-
   .icone-nome p {
     font-size: 20px;
   }
-
   .conteudo-box-icon {
-    gap:30px ;
+    gap: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  
-  /*--------------Produtos mais vendidos----------------*/
-
   .box-produto {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
   }
-  
   .box-produto img {
     height: 250px;
     width: 250px;
   }
-
   .nome {
     font-size: 20px;
     align-self: flex-start;
   }
-
   .preco {
     align-self: flex-start;
   }
-  
-  /*--------------cabeçalho----------------*/
-  /* Torna o menu horizontal com quebra de linha e espaçamento entre itens */
   .menu-lista {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
   }
-
   .slide {
     flex-direction: column;
     align-items: center;
   }
-
   .box-produto {
     width: 90%;
   }
-
-  /*-------------rodapé---------------*/
-  /* Alinha os itens do rodapé horizontalmente e permite quebra de linha */
   .rodape-conteudo {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
   }
-
-  /* Define que cada lado do rodapé ocupe aproximadamente metade do espaço */
   .rodape-esquerda,
   .rodape-direita {
     flex: 1 1 45%;
   }
-
-  /* Reduz o tamanho da fonte e aumenta o padding dos links do rodapé */
   .rodape-links a {
     font-size: 24px;
     padding: 6px 12px;
   }
-
-  /* Reduz a altura da logo no rodapé */
   .logo-rodape {
     height: 150px;
     margin-left: 80px;
     margin-top: 60px;
   }
-
-  /* Adiciona padding horizontal para conteúdo e menu */
   .rodape-conteudo,
   .menu-lista {
     padding: 0 1rem;
   }
 }
+
 @media (max-width: 480px) {
-  /*--------------cabeçalho----------------*/
-  .logo {
-    height: 80px; /* Reduz a altura da logo no cabeçalho */
+  .menu-lista {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
   }
 
-  /*-------------rodapé---------------*/
+  .menu-lista .item-esquerda,
+  .menu-lista .item-direita {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .icone-produto {
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+  }
+
+  .icone-nome p {
+    font-size: 16px;
+  }
+
+  .conteudo-box-icon {
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .box-produto {
+    width: 95%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .box-produto img {
+    height: auto;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .nome {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .preco {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 0;
+  }
+
+  .seta {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  .rodape-conteudo {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .rodape-esquerda,
+  .rodape-direita {
+    flex: unset;
+    width: 100%;
+    text-align: center;
+  }
+
   .rodape-links li {
-    font-size: 12px; /* Reduz o tamanho da fonte dos itens da lista do rodapé */
+    font-size: 16px;
+    margin: 4px 0;
   }
 
   .rodape-links a {
-    font-size: 16px; /* Diminui a fonte dos links do rodapé */
-    padding: 4px 8px; /* Reduz o preenchimento dos links */
+    font-size: 18px;
+    padding: 6px 10px;
   }
 
   .logo-rodape {
-    height: 150px; /* Define a altura da logo no rodapé */
-    margin-left: 0; /* Remove a margem esquerda */
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .apresentação {
+    font-size: 18px;
+    margin: 20px 10px;
   }
 }
 

@@ -1,4 +1,4 @@
-// server.js - Adaptado para PostgreSQL e Cloudinary
+
 const express = require("express");
 const session = require("express-session");
 const pgSession = require("connect-pg-simple")(session);
@@ -7,10 +7,9 @@ const bcrypt = require("bcryptjs");
 const { Pool } = require("pg");
 const path = require("path");
 const multer = require("multer");
-const { storage } = require("./cloudinaryConfig"); // Configuração Cloudinary
+const { storage } = require("./cloudinaryConfig"); 
 
-const upload = multer({ storage }); // Multer usando Cloudinary
-
+const upload = multer({ storage }); 
 const app = express();
 
 const db = new Pool({
@@ -125,8 +124,6 @@ app.get("/api/produtos/:id", autenticarFuncionario, async (req, res) => {
 
 // API Produtos - Criar novo produto com upload imagem
 app.post("/api/produtos", autenticarFuncionario, upload.single("imagem"), async (req, res) => {
-  console.log("Body recebido:", req.body);
-  console.log("Arquivo recebido:", req.file);
 
   const { nome, preco, categoria, caracteristica } = req.body;
   const imagem = req.file ? req.file.path : null; // URL Cloudinary
