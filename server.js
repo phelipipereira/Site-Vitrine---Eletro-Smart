@@ -1,4 +1,4 @@
-// Adaptado para PostgreSQL
+// Adaptado para PostgreSQL e Cloudinary
 const express = require("express");
 const session = require("express-session");
 const pgSession = require("connect-pg-simple")(session);
@@ -7,6 +7,8 @@ const bcrypt = require("bcryptjs");
 const { Pool } = require("pg");
 const path = require("path");
 const multer = require("multer");
+const { storage } = require("./cloudinaryConfig"); // Cloudinary config
+const upload = multer({ storage }); // Multer usando Cloudinary
 
 const app = express();
 const db = new Pool({
@@ -18,31 +20,22 @@ const db = new Pool({
 });
 
 app.use(express.static("public"));
-
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "homepage", "HomePage.html"));
-});
-
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, "public/assets"),
-  filename: (req, file, cb) => cb(null, Date.now() + "-" + file.originalname)
-});
-const upload = multer({ storage });
-
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-
 app.use(session({
-    store: new pgSession({
-    pool: db,                
-    tableName: 'session'     
+  store: new pgSession({
+    pool: db,
+    tableName: 'session'
   }),
   secret: "segredo_muito_forte_aqui",
   resave: false,
   saveUninitialized: false
 }));
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "homepage", "HomePage.html"));
+});
 
 app.post("/login", async (req, res) => {
   const { email, senha } = req.body;
@@ -63,7 +56,6 @@ app.post("/login", async (req, res) => {
   }
 });
 
-
 function autenticarFuncionario(req, res, next) {
   if (!req.session.userId) return res.redirect("/Login/Login.html");
   db.query("SELECT * FROM usuarios WHERE id = $1", [req.session.userId])
@@ -76,7 +68,6 @@ function autenticarFuncionario(req, res, next) {
     .catch(() => res.redirect("/Login/Login.html"));
 }
 
-
 function autenticarLider(req, res, next) {
   if (!req.session.userId) return res.status(401).send("Não autenticado");
   db.query("SELECT * FROM usuarios WHERE id = $1", [req.session.userId])
@@ -88,7 +79,6 @@ function autenticarLider(req, res, next) {
     })
     .catch(() => res.status(403).send("Acesso negado"));
 }
-
 
 app.get("/painel", autenticarFuncionario, (req, res) => {
   res.sendFile(path.join(__dirname, "public", "Painel", "painel.html"));
@@ -115,7 +105,7 @@ app.get("/api/produtos/:id", autenticarFuncionario, async (req, res) => {
 
 app.post("/api/produtos", autenticarFuncionario, upload.single("imagem"), async (req, res) => {
   const { nome, preco, categoria, caracteristica } = req.body;
-  const imagem = req.file ? "/assets/" + req.file.filename : "";
+  const imagem = req.file ? req.file.path : ""; // Cloudinary URL
   const precoConvertido = parseFloat(preco);
   try {
     await db.query(
@@ -130,8 +120,7 @@ app.post("/api/produtos", autenticarFuncionario, upload.single("imagem"), async 
 
 app.put("/api/produtos/:id", autenticarFuncionario, upload.single("imagem"), async (req, res) => {
   const { nome, preco, categoria, caracteristica } = req.body;
-
-  const imagem = req.file ? "/assets/" + req.file.filename : null;
+  const imagem = req.file ? req.file.path : null; // Cloudinary URL
   const precoConvertido = parseFloat(preco);
   try {
     if (imagem) {
