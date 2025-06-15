@@ -53,6 +53,7 @@ app.post("/login", async (req, res) => {
       res.send("Login inválido ou sem permissão.");
     }
   } catch (err) {
+    console.error("Erro no login:", err);
     res.status(500).send("Erro no servidor.");
   }
 });
