@@ -114,7 +114,7 @@ app.post("/api/produtos", autenticarFuncionario, upload.single("imagem"), async 
     );
     res.json({ sucesso: true });
   } catch (err) {
-    console.error("Erro ao adicionar produto:", err);
+    console.error("Erro ao adicionar produto:", JSON.stringify(err, null, 2));
     res.status(500).json({ sucesso: false, erro: err.message });
   }
 });
