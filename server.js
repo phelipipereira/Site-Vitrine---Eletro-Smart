@@ -1,6 +1,7 @@
 // Adaptado para PostgreSQL
 const express = require("express");
 const session = require("express-session");
+const pgSession = require("connect-pg-simple")(session);
 const bodyParser = require("body-parser");
 const bcrypt = require("bcryptjs");
 const { Pool } = require("pg");
