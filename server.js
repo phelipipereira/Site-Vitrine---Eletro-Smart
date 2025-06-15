@@ -34,6 +34,10 @@ app.use(bodyParser.json());
 
 
 app.use(session({
+    store: new pgSession({
+    pool: db,                
+    tableName: 'session'     
+  }),
   secret: "segredo_muito_forte_aqui",
   resave: false,
   saveUninitialized: false
