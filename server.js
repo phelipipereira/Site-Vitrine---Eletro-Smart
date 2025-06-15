@@ -125,6 +125,9 @@ app.get("/api/produtos/:id", autenticarFuncionario, async (req, res) => {
 
 // API Produtos - Criar novo produto com upload imagem
 app.post("/api/produtos", autenticarFuncionario, upload.single("imagem"), async (req, res) => {
+  console.log("Body recebido:", req.body);
+  console.log("Arquivo recebido:", req.file);
+
   const { nome, preco, categoria, caracteristica } = req.body;
   const imagem = req.file ? req.file.path : null; // URL Cloudinary
   const precoConvertido = parseFloat(preco);
