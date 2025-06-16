@@ -134,6 +134,7 @@
   background-color: #e2ac3f;
   padding: 10px 0;
   box-shadow: 0px 0.3rem 1rem rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
 }
 
 /*-------------rodapé---------------*/
@@ -146,6 +147,7 @@
   font-size: 0.9rem;
   box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.2);
   margin-top: 40px;
+  flex-shrink: 0;
 }
 .rodape-conteudo {
   max-width: 1200px; /* largura máxima para não esticar em telas grandes */
@@ -208,8 +210,19 @@
 /* estilo da logo no rodapé */
 .logo-rodape {
   display: block; /* garante que a logo se comporte como um bloco */
-  height: 250px;
+  height: 150px;
   filter: brightness(0) invert(1);
+  margin: 0 auto;
+}
+
+main {
+  flex: 1;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /*------------------ RESPONSIVO ------------------*/
