@@ -319,31 +319,9 @@
 }
 
 @media (max-width: 480px) {
-  .menu-lista {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem;
-  }
 
-  .menu-lista .item-esquerda,
-  .menu-lista .item-direita {
-    font-size: 16px;
-    text-align: center;
-  }
-
-  .logo {
-    height: 60px;
-  }
-
-  .icone-produto {
-    height: 80px;
-    width: 80px;
-    padding: 10px;
-  }
-
-  .icone-nome p {
-    font-size: 16px;
+ .logo {
+    height: 80px; /* Reduz a altura da logo no cabeçalho */
   }
 
   .conteudo-box-icon {
@@ -390,7 +368,7 @@
   .rodape-direita {
     flex: unset;
     width: 100%;
-    text-align: center;
+  
   }
 
   .rodape-links li {
@@ -404,13 +382,13 @@
   }
 
   .logo-rodape {
-    height: 100px;
+    height: 150px;
     margin: 0 auto;
     margin-top: 20px;
   }
 
   .apresentação {
-    font-size: 18px;
+    font-size: 25px;
     margin: 20px 10px;
   }
 }
