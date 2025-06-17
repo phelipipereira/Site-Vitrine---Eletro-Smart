@@ -190,7 +190,8 @@
 /* estilo da logo no rodapé */
 .logo-rodape {
   display: block; /* garante que a logo se comporte como um bloco */
-  height: 250px;
+  height: 150px;
+  margin: 0 auto;
   filter: brightness(0) invert(1);
 }
 
@@ -224,6 +225,13 @@
     height: 20rem;
   }
 
+  .logo-rodape {
+  display: block;
+  margin: 0 auto;
+  height: 150px;
+  filter: brightness(0) invert(1);
+}
+
 }
 
 @media (max-width: 768px) {
@@ -233,7 +241,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   /*-------------rodapé---------------*/
@@ -259,10 +267,12 @@
 
   /* Reduz a altura da logo no rodapé */
   .logo-rodape {
+    display: block;
+   margin: 0 auto;
     height: 150px;
-    margin-left: 80px;
-    margin-top: 60px;
-  }
+   filter: brightness(0) invert(1);
+}
+
 
   /* Adiciona padding horizontal para conteúdo e menu */
   .rodape-conteudo,
@@ -290,6 +300,14 @@
   .logo-rodape {
     height: 150px; /* Define a altura da logo no rodapé */
     margin-left: 0; /* Remove a margem esquerda */
+  }
+
+ .menu-lista {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
   }
 }
 

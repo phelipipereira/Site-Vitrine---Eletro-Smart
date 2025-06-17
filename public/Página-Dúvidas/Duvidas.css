@@ -226,7 +226,7 @@ body {
 }
 
 /*------------------ RESPONSIVO ------------------*/
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
 /*--------------Nav----------------*/Add commentMore actions
 
@@ -295,8 +295,9 @@ body {
   /* Reduz a altura da logo no rodapé */
   .logo-rodape {
     height: 150px;
-    margin-left: 80px;
-    margin-top: 60px;
+    margin: 0 auto;
+    display: block;
+    filter: brightness(0) invert(1);
   }
 
   /* Adiciona padding horizontal para conteúdo e menu */
@@ -305,7 +306,7 @@ body {
     padding: 0 1rem;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 630px) {
 
 /*--------------Nav----------------*/
 
@@ -354,8 +355,21 @@ body {
   .logo-rodape {
     height: 150px; /* Define a altura da logo no rodapé */
     margin-left: 0; /* Remove a margem esquerda */
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    filter: brightness(0) invert(1);
+  }
+
+  .menu-lista {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
   }
 }
+
 
 /* Permite rolagem horizontal se necessário */
 html,

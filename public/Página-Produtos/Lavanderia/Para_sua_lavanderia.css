@@ -177,6 +177,14 @@ label[for="ordenar"] {
     height: auto;
     margin-left: 10%;
   }
+
+  .menu-lista {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+  }
 }
 
 
@@ -385,6 +393,14 @@ label[for="ordenar"] {
   .logo-rodape {
     height: 150px; /* Define a altura da logo no rodapé */
     margin-left: 0; /* Remove a margem esquerda */
+  }
+
+  .menu-lista {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
   }
 }
 
