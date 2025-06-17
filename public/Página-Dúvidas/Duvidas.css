@@ -368,6 +368,11 @@ body {
     width: 100%;
     padding: 0 1rem;
   }
+
+  .item-esquerda{
+    padding-left: 30px;
+    padding-right: 10px;
+  }
 }
 
 
